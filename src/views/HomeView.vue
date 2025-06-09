@@ -5,7 +5,6 @@ import { useRouter } from 'vue-router'
 const currentSlide = ref(0)
 let intervalId = null
 
-// Replace these with your actual book cover image paths
 const bookCovers = ['Wolzen1.jpg', 'Wolzen2.jpg', 'Wolzen3.jpg']
 
 const nextSlide = () => {
@@ -13,8 +12,7 @@ const nextSlide = () => {
 }
 
 onMounted(() => {
-  // Auto-advance carousel every 2 seconds
-  intervalId = setInterval(nextSlide, 3000)
+  intervalId = setInterval(nextSlide, 2500)
 })
 
 onUnmounted(() => {
