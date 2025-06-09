@@ -38,6 +38,11 @@
         >Beta Reader Application</a
       >
     </h3>
+    <p>
+      <strong>NOTE:</strong> This is free beta reading. Before final publishing I have people I pay
+      to proofread my work. You will not be compensated for your time other than free access to my
+      book for the beta reading process.
+    </p>
   </div>
 </template>
 
