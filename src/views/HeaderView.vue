@@ -136,6 +136,7 @@ nav {
   transform: translateX(100%);
   transition: transform 0.3s ease;
   z-index: 1000;
+  text-align: right;
 }
 
 .mobile-nav.open {
@@ -144,9 +145,10 @@ nav {
 
 .mobile-nav .nav-link {
   display: block;
-  padding: 15px 0;
-  font-size: 1.2rem;
+  padding: 12px 20px;
+  font-size: 1rem;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  text-align: right;
 }
 
 .mobile-nav .nav-link:last-child {
