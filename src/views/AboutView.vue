@@ -7,13 +7,15 @@
       mind that she couldn't visit in real life and developed her imagination. Through high school,
       college, and her early career she still held her passion for reading and began to expand
       reading delving into a wider variety of genres, eventually finding a love for things a little
-      more on the edge - paranormal, shifers, and reverse harem being at the forefront.
+      more on the edge - paranormal, shifers, and reverse harem. She has become an avid reader of
+      fantasy and paranormal genres, and loves to share her own narrative, weaving together worlds
+      full of magic, danger, and complex relationships.
     </p>
     <p>
       Fast forward a few years and an idea formed in her head for a book that she couldn't make go
       away. Deciding to just "get it out of her head" she sat down and started writing. One page
-      became 10, one chapter turned into 20, and then there it was, her first book actually written
-      - Bunnies of Thornmaw - Bloosom's Story. While this book has yet to be published, it sparked a
+      became 10, one chapter turned into 20, and then there it was, her first book actually written:
+      Bunnies of Thornmaw - Bloosom's Story. While this book has yet to be published, it sparked a
       passion for writing that still continues. Here is a link to Ream Stories if you want to read
       <a
         href="https://reamstories.com/page/m3bk90e3vp/public"
@@ -26,6 +28,18 @@
       the Wolzen-Whitaker Academy series, a 3 book series that was her first series published on
       Amazon.
     </p>
+    <p>
+      Though her writing journey is a relatively new one, her imagination and dedication to
+      storytelling have already shaped her unique voice. She credits her inspiration to the dream
+      that launched her creative process, and she finds joy in bringing the characters and worlds in
+      her mind to life on paper.
+    </p>
+    <p>
+      When she isn't writing, she enjoys spending time with her supportive sisterwife and their
+      husband, who have been a constant source of encouragement as she navigates her new writing
+      path. Together, they create a loving and stable environment that fuels her creativity.
+    </p>
+    <p></p>
   </div>
 </template>
 
