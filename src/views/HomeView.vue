@@ -28,24 +28,13 @@ onUnmounted(() => {
 
     <div class="carousel-container">
       <div class="carousel">
-        <div 
-          class="carousel-track" 
-          :style="{ transform: `translateX(-${currentSlide * 100}%)` }"
-        >
-          <div 
-            v-for="(cover, index) in bookCovers" 
-            :key="index"
-            class="carousel-slide"
-          >
-            <img 
-              :src="cover" 
-              :alt="`Book Cover ${index + 1}`"
-              class="book-cover"
-            />
+        <div class="carousel-track" :style="{ transform: `translateX(-${currentSlide * 100}%)` }">
+          <div v-for="(cover, index) in bookCovers" :key="index" class="carousel-slide">
+            <img :src="cover" :alt="`Book Cover ${index + 1}`" class="book-cover" />
           </div>
         </div>
       </div>
-      
+
       <!-- Carousel indicators -->
       <div class="carousel-indicators">
         <button
@@ -56,6 +45,15 @@ onUnmounted(() => {
         ></button>
       </div>
     </div>
+    <p>
+      Find my current releases on
+      <a
+        href="https://www.amazon.com/stores/Angi-Lynn-Storm/author/B0DPTMGM6H?ref=sr_ntt_srch_lnk_1&qid=1749494782&sr=8-1&isDramIntegrated=true&shoppingPortalEnabled=true>"
+        alt="Amazon store link"
+        target="_blank"
+        >Amazon.</a
+      >
+    </p>
   </main>
 </template>
 
@@ -137,11 +135,11 @@ h2 {
   .carousel-container {
     max-width: 300px;
   }
-  
+
   .book-cover {
     height: 400px;
   }
-  
+
   h2 {
     font-size: 2rem;
   }
@@ -151,11 +149,11 @@ h2 {
   .carousel-container {
     max-width: 250px;
   }
-  
+
   .book-cover {
     height: 350px;
   }
-  
+
   h2 {
     font-size: 1.8rem;
   }
