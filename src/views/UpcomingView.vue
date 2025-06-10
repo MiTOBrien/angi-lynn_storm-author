@@ -9,14 +9,15 @@
       <h4>Series Information:</h4>
       <p>
         As a new group of friends meets and grows together, they decide to create a scrapbook of
-        their memories to share with others. Where they were, how they met, and where they are
-        going. As they travel through their life journey. But while a scrapbook is a lovely thing, a
+        their memories to share with others. Where they were, how they met, and where they are going
+        as they travel through their life journey. But while a scrapbook is a lovely thing, a
         picture only shows one singular frozen moment. The stories behind the photographs are what
         give the pictures life. Join Astrid and her chosen family as they share their private
         moments of love, life, healing, and growth. These are no-spice/low-spice stories that give
         you glimpses into the lives of these characters.<br /><br />
-        Tropes: reverse harem, BDSM ( Pet-play, impact play) hurt/comfort Trigger warnings: off-page
-        loss of family, loss of beloved pet, family relationships (sibling)
+        <strong>Tropes:</strong> reverse harem, BDSM ( Pet-play, impact play) hurt/comfort<br />
+        <strong>Trigger warnings:</strong> off-page loss of family, loss of beloved pet, family
+        relationships (sibling)
       </p>
       <ul class="book-list">
         <li class="book-item">
@@ -41,10 +42,11 @@
         In a world built for Alphas, there is a group of Omega's and one safe place that is seeking
         to challenge the status quo. Each of our Omegas has a path to follow, a journey they must go
         on to find the golden ring at the end of the climb. Each one has one thing that is their
-        rock bottom, but in the end becomes their salvation. Together with packs of Alphas who
+        rock bottom that in the end becomes their salvation. Together with packs of Alphas who
         believe that Omegas are the strongest of their society, they travel their path, fight the
-        fight, and come out on top. <<br /><br />Tropes: hurt/comfort, mpreg, loss of loved one,
-        emotional abuse Trigger warning: Flashback to loss of loved one, bullying, emotional abuse
+        fight, and come out on top. <br /><br /><strong>Tropes:</strong> hurt/comfort, mpreg, loss
+        of loved one, emotional abuse <br /><strong>Trigger warnings:</strong> Flashback to loss of
+        loved one, bullying, emotional abuse
       </p>
       <ul class="book-list">
         <li class="book-item">
@@ -52,7 +54,7 @@
           <span class="book-info">Jordan - Releasing August 2025</span>
         </li>
         <li class="book-item">
-          <div class="placeholder-cover">Coming Soon</div>
+          <img src="/Phoenix.jpg" alt="Phoenix Book Cover" class="book-thumbnail" />
           <span class="book-info">Phoenix - Releasing TBD</span>
         </li>
         <li class="book-item">
