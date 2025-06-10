@@ -32,7 +32,7 @@
     </ol>
     <h3>
       <a
-        href="https://docs.google.com/forms/d/e/1FAIpQLScVWxz6swgGWLo3delxlNhXmlUjzyI-xCM5V1mbmMF7gXutVw/viewform?fbclid=IwY2xjawKz4mlleHRuA2FlbQIxMABicmlkETExZ1h2MXlxNUFyU2QydVY3AR6xtKlm-3ip_IkDpBBXXqP_JcIMGvw748SnVC2OOhqT9xBGM3MPxcBbr1mB1Q_aem_FyUUZgbV0ltZEI5qdrIhlw"
+        href="https://docs.google.com/forms/d/1abMp4dDYgRp10jrlttnrlAAW2r-x7N9jvmDs7l6Y5Rg/edit?fbclid=IwY2xjawK1LuxleHRuA2FlbQIxMABicmlkETExZ1h2MXlxNUFyU2QydVY3AR5vTj8gsk08NWU0zbCH1Fgb2MlUFwOlrRwhoDHUdQRNg_9Juhi5VER6MGqNsQ_aem_L3iD42IGZbx3ZPEyp47DFg"
         alt="beta reader application"
         target="_blank"
         >Beta Reader Application</a
