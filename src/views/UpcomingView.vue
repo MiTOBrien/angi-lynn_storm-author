@@ -181,7 +181,7 @@ if (typeof window !== 'undefined') {
           @click="isMobile && toggleMobileModal('micha', $event)"
         >
           <img src="/Micha.jpg" alt="Micha Book Cover" class="book-thumbnail" />
-          <span class="book-info">Michaa - Releasing TBD</span>
+          <span class="book-info">Micha - Releasing TBD</span>
           <span v-if="isMobile" class="tap-hint">Tap for details</span>
         </li>
       </ul>
