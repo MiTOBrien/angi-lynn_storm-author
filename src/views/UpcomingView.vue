@@ -114,7 +114,7 @@ if (typeof window !== 'undefined') {
           @click="isMobile && toggleMobileModal('kent', $event)"
         >
           <img src="/Kent.jpg" alt="Kent Book Cover" class="book-thumbnail" />
-          <span class="book-info">Master Kent - Releasing TBD</span>
+          <span class="book-info">Master Kent - Releasing - July 2025</span>
           <span v-if="isMobile" class="tap-hint">Tap for details</span>
         </li>
         <li
@@ -123,8 +123,18 @@ if (typeof window !== 'undefined') {
           @mouseleave="!isMobile && hideModal()"
           @click="isMobile && toggleMobileModal('storm', $event)"
         >
-          <img src="/Storm.jpg" alt="Storm Book Cover" class="book-thumbnail" />
-          <span class="book-info">Master Storm - Releasing TBD</span>
+          <img src="/Storm.jpg" alt="Storm Book Cover Coming Soon" class="book-thumbnail" />
+          <span class="book-info">Master Storm - Beta Read - TBD</span>
+          <span v-if="isMobile" class="tap-hint">Tap for details</span>
+        </li>
+        <li
+          class="book-item"
+          @mouseenter="!isMobile && showModal('storm', $event)"
+          @mouseleave="!isMobile && hideModal()"
+          @click="isMobile && toggleMobileModal('storm', $event)"
+        >
+          <img src="/Mayson.jpg" alt="Mayson Book Cover" class="book-thumbnail" />
+          <span class="book-info">Mayson - Beta Read - TBD</span>
           <span v-if="isMobile" class="tap-hint">Tap for details</span>
         </li>
       </ul>
@@ -151,7 +161,7 @@ if (typeof window !== 'undefined') {
           @click="isMobile && toggleMobileModal('jordan', $event)"
         >
           <img src="/Jordan.jpg" alt="Jordan Book Cover" class="book-thumbnail" />
-          <span class="book-info">Jordan - Releasing August 2025</span>
+          <span class="book-info">Jordan - Beta Read - ETA July 2025</span>
           <span v-if="isMobile" class="tap-hint">Tap for details</span>
         </li>
         <li
@@ -161,7 +171,7 @@ if (typeof window !== 'undefined') {
           @click="isMobile && toggleMobileModal('phoenix', $event)"
         >
           <img src="/Phoenix.jpg" alt="Phoenix Book Cover" class="book-thumbnail" />
-          <span class="book-info">Phoenix - Releasing TBD</span>
+          <span class="book-info">Phoenix - Beta Read - TBD</span>
           <span v-if="isMobile" class="tap-hint">Tap for details</span>
         </li>
         <li
@@ -171,7 +181,7 @@ if (typeof window !== 'undefined') {
           @click="isMobile && toggleMobileModal('cole', $event)"
         >
           <img src="/Cole.jpg" alt="Cole Book Cover" class="book-thumbnail" />
-          <span class="book-info">Cole - Releasing TBD</span>
+          <span class="book-info">Cole - Beta Read - TBD</span>
           <span v-if="isMobile" class="tap-hint">Tap for details</span>
         </li>
         <li
@@ -181,7 +191,7 @@ if (typeof window !== 'undefined') {
           @click="isMobile && toggleMobileModal('micha', $event)"
         >
           <img src="/Micha.jpg" alt="Micha Book Cover" class="book-thumbnail" />
-          <span class="book-info">Micha - Releasing TBD</span>
+          <span class="book-info">Micha - Beta Read - TBD</span>
           <span v-if="isMobile" class="tap-hint">Tap for details</span>
         </li>
       </ul>

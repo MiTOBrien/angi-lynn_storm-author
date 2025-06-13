@@ -19,6 +19,10 @@ export const bookData = {
     blurb:
       "In a world that tells him he's weak, Jordan knows his own strength. As an Omega fighting against societal expectations, he must navigate a path filled with challenges while searching for a pack that sees his true worth. His story is one of self-discovery and finding where he truly belongs.",
   },
+  mayson: {
+    title: 'Mayson',
+    blurb: 'Coming soon',
+  },
   phoenix: {
     title: 'Phoenix',
     blurb:
