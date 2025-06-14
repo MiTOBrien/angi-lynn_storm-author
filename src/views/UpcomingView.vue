@@ -123,18 +123,18 @@ if (typeof window !== 'undefined') {
           @mouseleave="!isMobile && hideModal()"
           @click="isMobile && toggleMobileModal('storm', $event)"
         >
-          <img src="/Storm.jpg" alt="Storm Book Cover Coming Soon" class="book-thumbnail" />
+          <img src="/Storm.jpg" alt="Storm Book Cover" class="book-thumbnail" />
           <span class="book-info">Master Storm - Beta Read - TBD</span>
           <span v-if="isMobile" class="tap-hint">Tap for details</span>
         </li>
         <li
           class="book-item"
-          @mouseenter="!isMobile && showModal('storm', $event)"
+          @mouseenter="!isMobile && showModal('mayson', $event)"
           @mouseleave="!isMobile && hideModal()"
-          @click="isMobile && toggleMobileModal('storm', $event)"
+          @click="isMobile && toggleMobileModal('mayson', $event)"
         >
           <img src="/Mayson.jpg" alt="Mayson Book Cover" class="book-thumbnail" />
-          <span class="book-info">Mayson - Beta Read - TBD</span>
+          <span class="book-info">Mayson - Work in progress</span>
           <span v-if="isMobile" class="tap-hint">Tap for details</span>
         </li>
       </ul>
@@ -191,7 +191,7 @@ if (typeof window !== 'undefined') {
           @click="isMobile && toggleMobileModal('micha', $event)"
         >
           <img src="/Micha.jpg" alt="Micha Book Cover" class="book-thumbnail" />
-          <span class="book-info">Micha - Beta Read - TBD</span>
+          <span class="book-info">Micha - Work in progress</span>
           <span v-if="isMobile" class="tap-hint">Tap for details</span>
         </li>
       </ul>

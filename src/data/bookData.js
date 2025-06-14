@@ -14,14 +14,15 @@ export const bookData = {
     blurb:
       "Storm lives up to his name - intense, unpredictable, and powerful. When he joins Astrid's circle, he brings with him a tempest of emotions and a past that threatens to overwhelm them all. His journey is one of learning to channel his intensity into protection and love rather than destruction.",
   },
+  mayson: {
+    title: 'Mayson',
+    blurb:
+      "After escaping the darkness of his past, Mayson has spent two years finding quiet refuge at the Majestic Mountain Inn. But peace doesn't come easy. As he begins to explore a new side of himself, hes faced with the pull of old habits and the fear of never truly belonging. Through trust, connection, and the care of those around him, Mayson discovers that love isn't just something to give—it's something he's worthy of receiving.",
+  },
   jordan: {
     title: 'Jordan',
     blurb:
       "In a world that tells him he's weak, Jordan knows his own strength. As an Omega fighting against societal expectations, he must navigate a path filled with challenges while searching for a pack that sees his true worth. His story is one of self-discovery and finding where he truly belongs.",
-  },
-  mayson: {
-    title: 'Mayson',
-    blurb: 'Coming soon',
   },
   phoenix: {
     title: 'Phoenix',

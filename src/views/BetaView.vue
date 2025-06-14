@@ -22,8 +22,9 @@
         like it" aren't good or insightful feedback so take the time to give the author meaningful
         feeback on their work. You're reading this before everyone else and have an opporuntity to
         help influence the final release.
-        <br /><strong>NOTE: </strong>You should be able to provide feedback within 2 weeks of
-        receiving the book.
+        <br /><strong>NOTE: </strong>You should be able to provide your initial feedback within 2
+        weeks of receiving the book. If you want to reread or provide more in depth feedback all
+        feedback should be provided within 4 weeks.
       </li>
       <li>
         Agree not to share this book with anyone else or discuss it with anyone else. You have the
