@@ -51,7 +51,11 @@ body {
 nav {
   display: flex;
   align-items: flex-start;
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
   height: 120px;
   padding: 10px 20px;
   background-color: #b366ff;
@@ -59,6 +63,8 @@ nav {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  z-index: 1000;
+  box-sizing: border-box;
 }
 
 .home {
@@ -132,7 +138,7 @@ nav {
 .mobile-nav {
   display: none;
   position: fixed;
-  top: 80px;
+  top: 120px;
   right: 0;
   background-color: #b366ff;
   width: 100%;
@@ -164,6 +170,7 @@ nav {
 @media (max-width: 768px) {
   .home {
     font-size: 1.5rem;
+    top: 70px;
   }
 
   .desktop-nav {
