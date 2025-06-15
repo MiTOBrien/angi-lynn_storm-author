@@ -3,11 +3,11 @@
     <h2>The Author</h2>
     <p>
       Angi-Lynn Storm was born in Iowa in 1977. Growing up in a small town she spent a lot of time
-      at the library where she fell in love with reading. This allowed to visit in places in her
+      at the library where she fell in love with reading. This allowed her to visit places in her
       mind that she couldn't visit in real life and developed her imagination. Through high school,
-      college, and her early career she still held her passion for reading and began to expand
-      reading delving into a wider variety of genres, eventually finding a love for things a little
-      more on the edge - paranormal, shifers, and reverse harem. She has become an avid reader of
+      college, and her early career she still held her passion for reading and began to expand her
+      reading, delving into a wider variety of genres, eventually finding a love for things a little
+      more on the edge - paranormal, shifters, and reverse harem. She has become an avid reader of
       fantasy and paranormal genres, and loves to share her own narrative, weaving together worlds
       full of magic, danger, and complex relationships.
     </p>
@@ -23,9 +23,9 @@
         target="_blank"
         >Blossom's Story</a
       >
-      or some other works in progress. Her next idea for a book series quickly came to mind and
-      fingers were flying over the keyboard again and Madison came to life as the main character in
-      the Wolzen-Whitaker Academy series, a 3 book series that was her first series published on
+      or some of her other works in progress. Her next idea for a book series quickly came to mind
+      and fingers were flying over the keyboard again and Madison came to life as the main character
+      in the Wolzen-Whitaker Academy series, a 3 book series that was her first series published on
       Amazon.
     </p>
     <p>
