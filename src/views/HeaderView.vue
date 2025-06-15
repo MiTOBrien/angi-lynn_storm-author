@@ -50,11 +50,15 @@ body {
 
 nav {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   position: relative;
-  height: 60px;
+  height: 120px;
   padding: 10px 20px;
   background-color: #b366ff;
+  background: url('/banner_small.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .home {
@@ -79,7 +83,7 @@ nav {
 
 .nav-link {
   text-decoration: none;
-  color: white;
+  color: #483248;
   font-weight: 500;
   transition: color 0.3s ease;
 }
