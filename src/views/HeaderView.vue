@@ -89,7 +89,8 @@ nav {
 }
 
 .nav-link:hover {
-  color: #f0f0f0;
+  color: #7f00ff;
+  transform: scale(1.1);
 }
 
 /* Hamburger menu button */
