@@ -21,7 +21,7 @@
       ><img src="/amazon_48px.png" alt="Amazon page"
     /></a>
     <a href="https://reamstories.com/page/m3bk90e3vp/public" target="_blank" alt="Ream Stories Page"
-      ><img src="/ream_48px.png" alt="Ream Stories Page"
+      ><img src="/ream_48px.png" alt="Ream Stories Page" class="ream"
     /></a>
     <a href="mailto:angilynnstormauthor@gmail.com" alt="Email me"
       ><img src="/email_48px.png" alt="Email me"
@@ -35,5 +35,9 @@ a {
 }
 .socials {
   text-align: center;
+}
+
+.ream {
+  border-radius: 50%;
 }
 </style>
