@@ -2,6 +2,8 @@
 
 This site was developed for Angi-Lynn Storm, an independent author. She requested a mobile-friendly author webiste to display her current releases, upcoming releases, an about page and the ability for users to sign up to be beta readers for her upcoming releases.
 
+![Screenshot of Author Website](public/AngiLynnStorm.png)
+
 ## Deployed Site
 
 [Angi-lynn Storm Author Website](https://angilynnstormauthor.netlify.app/)
