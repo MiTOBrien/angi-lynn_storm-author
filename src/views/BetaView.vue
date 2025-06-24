@@ -10,7 +10,8 @@
       to provide feedback on. I value your feedback and if this is something you are interested in
       read the expections below and sign up.
     </p>
-    <h3>Expectations</h3>
+    <h3>Our Agreement</h3>
+    <h4>Beta Reader Expections</h4>
     <p>
       As a beta reader you will be expected to comply with the following. Failure to comply will
       result in you being removed from my beta reader list and you will not be considered for future
@@ -32,6 +33,26 @@
         be book 2 or 3 in a series. Other people may want to know what is "coming next" for their
         favorite character but they just have to wait. Keep it to yourself.
       </li>
+      <li>
+        If you are a professional beta reader you acknowledge that my reviews of your services will
+        be provided on free social media sites such as instagram, facebook, and threads.
+      </li>
+    </ol>
+    <h4>Author Expections</h4>
+    <p>As the author I agree to comply with the following.</p>
+    <ol>
+      <li>
+        I will provide the book to you in the format you requested within the agreed upong timeline.
+      </li>
+      <li>
+        I will read, and thoughtfully consider all feedback that is provided by all of my beta
+        readers.
+      </li>
+      <li>
+        If you are a professional beta reader I agree to provide you timely, honest feedback on the
+        quality of your services to one, or more of your free social media sites such as instagram,
+        facebook, and threads.
+      </li>
     </ol>
     <h3>
       <a
@@ -50,7 +71,8 @@
 </template>
 
 <style scoped>
-h2 {
+h2,
+h3 {
   text-align: center;
 }
 div {
