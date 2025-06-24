@@ -35,14 +35,15 @@
       </li>
       <li>
         If you are a professional beta reader you acknowledge that my reviews of your services will
-        be provided on free social media sites such as instagram, facebook, and threads.
+        be provided on free social media sites such as instagram, facebook, and threads. Feedback
+        will not be provided on paid sites such as Fiverr, Upwork, or similar sites.
       </li>
     </ol>
     <h4>Author Expections</h4>
     <p>As the author I agree to comply with the following.</p>
     <ol>
       <li>
-        I will provide the book to you in the format you requested within the agreed upong timeline.
+        I will provide the book to you in the format you requested within the agreed upon timeline.
       </li>
       <li>
         I will read, and thoughtfully consider all feedback that is provided by all of my beta
@@ -51,7 +52,8 @@
       <li>
         If you are a professional beta reader I agree to provide you timely, honest feedback on the
         quality of your services to one, or more of your free social media sites such as instagram,
-        facebook, and threads.
+        facebook, and threads. Feedback will not be provided on paid sites such as Fiverr, Upwork,
+        or similar sites.
       </li>
     </ol>
     <h3>
