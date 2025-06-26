@@ -237,7 +237,7 @@ h2 {
 
 h3 {
   margin: 20px 0;
-  color: #b366ff;
+  color: #8c2cec;
   font-size: 1.5rem;
 }
 
@@ -252,7 +252,7 @@ h3 {
   align-items: center;
   margin-bottom: 20px;
   padding: 15px;
-  background-color: #f9f9f9;
+  background-color: #e0d0d0;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   cursor: pointer;
