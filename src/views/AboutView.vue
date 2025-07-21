@@ -25,8 +25,7 @@
       >
       or some of her other works in progress. Her next idea for a book series quickly came to mind
       and fingers were flying over the keyboard again and Madison came to life as the main character
-      in the Wolzen-Whitaker Academy series, a 3 book series that was her first series published on
-      Amazon.
+      in the Wolzen-Whitaker Academy series, a 3 book series that was her first series completed.
     </p>
     <p>
       Though her writing journey is a relatively new one, her imagination and dedication to

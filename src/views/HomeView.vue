@@ -1,7 +1,12 @@
 <script setup>
 import { ref, computed, onMounted, onUnmounted } from 'vue'
 import { useRouter } from 'vue-router'
-import { bookReviews, getFeaturedReviews, getReviewsByBook, getReviewsBySource } from '../data/bookReviews.js'
+import {
+  bookReviews,
+  getFeaturedReviews,
+  getReviewsByBook,
+  getReviewsBySource,
+} from '../data/bookReviews.js'
 
 const currentSlide = ref(0)
 let intervalId = null
@@ -14,13 +19,13 @@ const showAllReviews = ref(false)
 const reviewsToShow = ref(3)
 
 // Get unique book titles and sources for filter options
-const bookTitles = [...new Set(bookReviews.map(review => review.book))]
-const reviewSources = [...new Set(bookReviews.map(review => review.source))]
+const bookTitles = [...new Set(bookReviews.map((review) => review.book))]
+const reviewSources = [...new Set(bookReviews.map((review) => review.source))]
 
 // Computed property for filtered reviews
 const filteredReviews = computed(() => {
   let reviews = []
-  
+
   switch (selectedFilter.value) {
     case 'featured':
       reviews = getFeaturedReviews()
@@ -36,12 +41,11 @@ const filteredReviews = computed(() => {
       // Check if it's a source filter
       else if (reviewSources.includes(selectedFilter.value)) {
         reviews = getReviewsBySource(selectedFilter.value)
-      }
-      else {
+      } else {
         reviews = getFeaturedReviews()
       }
   }
-  
+
   // Limit reviews if not showing all
   return showAllReviews.value ? reviews : reviews.slice(0, reviewsToShow.value)
 })
@@ -73,12 +77,17 @@ const showMoreReviews = () => {
 
 // Check if there are more reviews to show
 const hasMoreReviews = computed(() => {
-  const totalReviews = selectedFilter.value === 'featured' ? getFeaturedReviews().length :
-                      selectedFilter.value === 'all' ? bookReviews.length :
-                      bookTitles.includes(selectedFilter.value) ? getReviewsByBook(selectedFilter.value).length :
-                      reviewSources.includes(selectedFilter.value) ? getReviewsBySource(selectedFilter.value).length :
-                      getFeaturedReviews().length
-  
+  const totalReviews =
+    selectedFilter.value === 'featured'
+      ? getFeaturedReviews().length
+      : selectedFilter.value === 'all'
+        ? bookReviews.length
+        : bookTitles.includes(selectedFilter.value)
+          ? getReviewsByBook(selectedFilter.value).length
+          : reviewSources.includes(selectedFilter.value)
+            ? getReviewsBySource(selectedFilter.value).length
+            : getFeaturedReviews().length
+
   return !showAllReviews.value && reviewsToShow.value < totalReviews
 })
 
@@ -120,30 +129,36 @@ onUnmounted(() => {
     <!-- Reviews Section -->
     <section class="reviews-section">
       <h3>What Readers Are Saying</h3>
-      
+
       <!-- Review Filters -->
       <div class="review-filters">
-        <button 
+        <button
           :class="['filter-btn', { active: selectedFilter === 'featured' }]"
           @click="changeFilter('featured')"
         >
           Featured Reviews
         </button>
-        <button 
+        <button
           :class="['filter-btn', { active: selectedFilter === 'all' }]"
           @click="changeFilter('all')"
         >
           All Reviews
         </button>
         <div class="filter-dropdown">
-          <select v-model="selectedFilter" @change="changeFilter(selectedFilter)" class="book-filter">
+          <select
+            v-model="selectedFilter"
+            @change="changeFilter(selectedFilter)"
+            class="book-filter"
+          >
             <option value="featured">Featured Reviews</option>
             <option value="all">All Reviews</option>
             <optgroup label="By Book">
               <option v-for="book in bookTitles" :key="book" :value="book">{{ book }}</option>
             </optgroup>
             <optgroup label="By Source">
-              <option v-for="source in reviewSources" :key="source" :value="source">{{ source }}</option>
+              <option v-for="source in reviewSources" :key="source" :value="source">
+                {{ source }}
+              </option>
             </optgroup>
           </select>
         </div>
@@ -170,30 +185,36 @@ onUnmounted(() => {
 
       <!-- Show More Button -->
       <div v-if="hasMoreReviews" class="show-more-container">
-        <button @click="showMoreReviews" class="show-more-btn">
-          Show More Reviews
-        </button>
+        <button @click="showMoreReviews" class="show-more-btn">Show More Reviews</button>
       </div>
-      
+
       <!-- Reviews Summary -->
       <div class="reviews-summary">
-        <p>Showing {{ filteredReviews.length }} of {{ 
-          selectedFilter === 'featured' ? getFeaturedReviews().length :
-          selectedFilter === 'all' ? bookReviews.length :
-          bookTitles.includes(selectedFilter) ? getReviewsByBook(selectedFilter).length :
-          reviewSources.includes(selectedFilter) ? getReviewsBySource(selectedFilter).length :
-          getFeaturedReviews().length
-        }} reviews</p>
+        <p>
+          Showing {{ filteredReviews.length }} of
+          {{
+            selectedFilter === 'featured'
+              ? getFeaturedReviews().length
+              : selectedFilter === 'all'
+                ? bookReviews.length
+                : bookTitles.includes(selectedFilter)
+                  ? getReviewsByBook(selectedFilter).length
+                  : reviewSources.includes(selectedFilter)
+                    ? getReviewsBySource(selectedFilter).length
+                    : getFeaturedReviews().length
+          }}
+          reviews
+        </p>
       </div>
     </section>
 
     <p>
-      Find my current releases on
+      Find all of my current releases as well as works in progress here:
       <a
-        href="https://www.amazon.com/stores/Angi-Lynn-Storm/author/B0DPTMGM6H?ref=sr_ntt_srch_lnk_1&qid=1749494782&sr=8-1&isDramIntegrated=true&shoppingPortalEnabled=true"
-        alt="Amazon store link"
+        href="https://reamstories.com/page/m3bk90e3vp/public"
+        alt="Ream Stories page"
         target="_blank"
-        >Amazon.</a
+        >Ream Stories.</a
       >
     </p>
   </main>
@@ -351,7 +372,9 @@ h2 {
   border-radius: 12px;
   padding: 25px;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
   max-width: 400px;
   width: 100%;
   border-left: 4px solid #b366ff;
