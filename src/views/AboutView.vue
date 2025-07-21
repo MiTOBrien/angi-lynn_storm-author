@@ -15,7 +15,7 @@
       Fast forward a few years and an idea formed in her head for a book that she couldn't make go
       away. Deciding to just "get it out of her head" she sat down and started writing. One page
       became 10, one chapter turned into 20, and then there it was, her first book actually written:
-      Bunnies of Thornmaw - Blossom's Story. While this book has yet to be published, it sparked a
+      Bunnies of Thornmaw - Blossom's Story. While this book has yet to be officially published, it sparked a
       passion for writing that still continues. Here is a link to Ream Stories if you want to read
       <a
         href="https://reamstories.com/page/m3bk90e3vp/public"
@@ -23,7 +23,7 @@
         target="_blank"
         >Blossom's Story</a
       >
-      or some of her other works in progress. Her next idea for a book series quickly came to mind
+      ,any of other  of her other works in progress or completed series. Her next idea for a book series quickly came to mind
       and fingers were flying over the keyboard again and Madison came to life as the main character
       in the Wolzen-Whitaker Academy series, a 3 book series that was her first series completed.
     </p>
