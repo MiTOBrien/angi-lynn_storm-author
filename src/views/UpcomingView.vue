@@ -171,7 +171,7 @@ if (typeof window !== 'undefined') {
           @click="isMobile && toggleMobileModal('phoenix', $event)"
         >
           <img src="/Phoenix.jpg" alt="Phoenix Book Cover" class="book-thumbnail" />
-          <span class="book-info">Phoenix - In Final Edit - est. Jan 2025</span>
+          <span class="book-info">Phoenix - In Final Edit - est. Jan 2026</span>
           <span v-if="isMobile" class="tap-hint">Tap for details</span>
         </li>
         <li
