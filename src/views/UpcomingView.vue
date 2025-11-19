@@ -104,7 +104,7 @@ if (typeof window !== 'undefined') {
           @click="isMobile && toggleMobileModal('astrid', $event)"
         >
           <img src="/AstridCover.jpg" alt="Astrid Book Cover" class="book-thumbnail" />
-          <span class="book-info">Astrid -  In Final Edit - est. Nov 2025</span>
+          <span class="book-info">Astrid -  In Final Edit - est. Dec 2025</span>
           <span v-if="isMobile" class="tap-hint">Tap for details</span>
         </li>
         <li
@@ -114,7 +114,7 @@ if (typeof window !== 'undefined') {
           @click="isMobile && toggleMobileModal('kent', $event)"
         >
           <img src="/Kent.jpg" alt="Kent Book Cover" class="book-thumbnail" />
-          <span class="book-info">Master Kent - In Final Edit - est Dec 2025</span>
+          <span class="book-info">Master Kent - In Final Edit - est Jan 2026</span>
           <span v-if="isMobile" class="tap-hint">Tap for details</span>
         </li>
         <li
@@ -124,7 +124,7 @@ if (typeof window !== 'undefined') {
           @click="isMobile && toggleMobileModal('storm', $event)"
         >
           <img src="/Storm.jpg" alt="Storm Book Cover" class="book-thumbnail" />
-          <span class="book-info">Master Storm - Beta Read - est. Jan 2026</span>
+          <span class="book-info">Master Storm - Beta Read - est. Feb 2026</span>
           <span v-if="isMobile" class="tap-hint">Tap for details</span>
         </li>
         <li
@@ -134,7 +134,7 @@ if (typeof window !== 'undefined') {
           @click="isMobile && toggleMobileModal('mayson', $event)"
         >
           <img src="/Mayson.jpg" alt="Mayson Book Cover" class="book-thumbnail" />
-          <span class="book-info">Mayson - Beta Read - est. Feb 2026</span>
+          <span class="book-info">Mayson - Beta Read - est. Mar 2026</span>
           <span v-if="isMobile" class="tap-hint">Tap for details</span>
         </li>
       </ul>
@@ -161,7 +161,7 @@ if (typeof window !== 'undefined') {
           @click="isMobile && toggleMobileModal('jordan', $event)"
         >
           <img src="/Jordan.jpg" alt="Jordan Book Cover" class="book-thumbnail" />
-          <span class="book-info">Jordan - In Final Edit - est. Nov 2025</span>
+          <span class="book-info">Jordan - In Final Edit - est. Dec 2025</span>
           <span v-if="isMobile" class="tap-hint">Tap for details</span>
         </li>
         <li
@@ -171,7 +171,7 @@ if (typeof window !== 'undefined') {
           @click="isMobile && toggleMobileModal('phoenix', $event)"
         >
           <img src="/Phoenix.jpg" alt="Phoenix Book Cover" class="book-thumbnail" />
-          <span class="book-info">Phoenix - In Final Edit - est. Dec 2025</span>
+          <span class="book-info">Phoenix - In Final Edit - est. Jan 2025</span>
           <span v-if="isMobile" class="tap-hint">Tap for details</span>
         </li>
         <li
@@ -181,7 +181,7 @@ if (typeof window !== 'undefined') {
           @click="isMobile && toggleMobileModal('cole', $event)"
         >
           <img src="/Cole.jpg" alt="Cole Book Cover" class="book-thumbnail" />
-          <span class="book-info">Cole - Beta Read - est. Jan 2026</span>
+          <span class="book-info">Cole - Beta Read - est. Feb 2026</span>
           <span v-if="isMobile" class="tap-hint">Tap for details</span>
         </li>
         <li
@@ -191,7 +191,7 @@ if (typeof window !== 'undefined') {
           @click="isMobile && toggleMobileModal('micha', $event)"
         >
           <img src="/Micha.jpg" alt="Micha Book Cover" class="book-thumbnail" />
-          <span class="book-info">Micha - Beta Read - est. Feb 2026</span>
+          <span class="book-info">Micha - Beta Read - est. Mar 2026</span>
           <span v-if="isMobile" class="tap-hint">Tap for details</span>
         </li>
       </ul>
