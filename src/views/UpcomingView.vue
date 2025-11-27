@@ -85,16 +85,24 @@ if (typeof window !== 'undefined') {
       <h3>Captured Memories Series</h3>
       <h4>Series Information:</h4>
       <p>
-        As a new group of friends meets and grows together, they decide to create a scrapbook of
-        their memories to share with others. Where they were, how they met, and where they are going
-        as they travel through their life journey. But while a scrapbook is a lovely thing, a
-        picture only shows one singular frozen moment. The stories behind the photographs are what
-        give the pictures life. Join Astrid and her chosen family as they share their private
-        moments of love, life, healing, and growth. These are no-spice/low-spice stories that give
-        you glimpses into the lives of these characters.<br /><br />
-        <strong>Tropes:</strong> reverse harem, BDSM ( Pet-play, impact play) hurt/comfort<br />
+        When friends who are closer than family gather for Thanksgiving, their conversation
+        naturally circles back to the first meal many of them ever shared—setting off a wave of
+        memories and laughter. As they reminisce, they begin revisiting the moments that shaped
+        their individual journeys and ultimately drew them together. One thought lingers among them:
+        every picture represents a moment in time, but the real meaning lives in the story behind
+        it. A single snapshot never captures the choices, the struggles, or the quiet victories that
+        led to that moment. Follow Astrid and her found family as they reflect on the “pictures” of
+        their lives—both the ones hanging on their walls and the ones they carry only in memory—and
+        share the experiences that brought them from where they started to where they stand now. At
+        its heart, this series explores how people from different backgrounds—and sometimes very
+        different worlds—can find themselves woven into the same chosen family. This why-choose,
+        low-spice, slice-of-life series unfolds through personal reflections, heartfelt
+        conversations, and shared memories, offering an intimate look at each character's growth and
+        the bonds that hold them together.<br /><br />
+        <strong>Tropes:</strong> reverse harem, BDSM ( Pet-play, impact play - floggers, whips, fire
+        play, Domainance/submission) hurt/comfort<br />
         <strong>Trigger warnings:</strong> off-page loss of family, loss of beloved pet, family
-        relationships (sibling)
+        relationships (sibling),
       </p>
       <ul class="book-list">
         <li
@@ -104,7 +112,16 @@ if (typeof window !== 'undefined') {
           @click="isMobile && toggleMobileModal('astrid', $event)"
         >
           <img src="/AstridCover.jpg" alt="Astrid Book Cover" class="book-thumbnail" />
-          <span class="book-info">Astrid -  In Final Edit - est. Dec 2025</span>
+          <span class="book-info"
+            >Astrid - Preorder on
+            <a
+              href="https://www.amazon.com/dp/B0G492YL9B?binding=kindle_edition&ref_=ast_author_bsi"
+              target="_blank"
+              alt="Click link to preorder book"
+              >Amazon</a
+            >
+            - available Dec. 15th, 2025</span
+          >
           <span v-if="isMobile" class="tap-hint">Tap for details</span>
         </li>
         <li
@@ -161,7 +178,7 @@ if (typeof window !== 'undefined') {
           @click="isMobile && toggleMobileModal('jordan', $event)"
         >
           <img src="/Jordan.jpg" alt="Jordan Book Cover" class="book-thumbnail" />
-          <span class="book-info">Jordan - In Final Edit - est. Dec 2025</span>
+          <span class="book-info">Jordan - In Final Edit - est. early 2026</span>
           <span v-if="isMobile" class="tap-hint">Tap for details</span>
         </li>
         <li
@@ -171,7 +188,7 @@ if (typeof window !== 'undefined') {
           @click="isMobile && toggleMobileModal('phoenix', $event)"
         >
           <img src="/Phoenix.jpg" alt="Phoenix Book Cover" class="book-thumbnail" />
-          <span class="book-info">Phoenix - In Final Edit - est. Jan 2026</span>
+          <span class="book-info">Phoenix - In Final Edit - est. early 2026</span>
           <span v-if="isMobile" class="tap-hint">Tap for details</span>
         </li>
         <li
@@ -181,7 +198,7 @@ if (typeof window !== 'undefined') {
           @click="isMobile && toggleMobileModal('cole', $event)"
         >
           <img src="/Cole.jpg" alt="Cole Book Cover" class="book-thumbnail" />
-          <span class="book-info">Cole - Beta Read - est. Feb 2026</span>
+          <span class="book-info">Cole - Beta Read - est. early 2026</span>
           <span v-if="isMobile" class="tap-hint">Tap for details</span>
         </li>
         <li
@@ -191,7 +208,7 @@ if (typeof window !== 'undefined') {
           @click="isMobile && toggleMobileModal('micha', $event)"
         >
           <img src="/Micha.jpg" alt="Micha Book Cover" class="book-thumbnail" />
-          <span class="book-info">Micha - Beta Read - est. Mar 2026</span>
+          <span class="book-info">Micha - Beta Read - est. early 2026</span>
           <span v-if="isMobile" class="tap-hint">Tap for details</span>
         </li>
       </ul>
