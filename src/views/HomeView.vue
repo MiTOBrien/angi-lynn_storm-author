@@ -11,7 +11,7 @@ import {
 const currentSlide = ref(0)
 let intervalId = null
 
-const bookCovers = ['Wolzen1.jpg', 'Wolzen2.jpg', 'Wolzen3.jpg']
+const bookCovers = ['AstridCover.jpg', 'Wolzen1.jpg', 'Wolzen2.jpg', 'Wolzen3.jpg']
 
 // Review filtering state
 const selectedFilter = ref('featured')

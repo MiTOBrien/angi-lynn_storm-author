@@ -131,7 +131,7 @@ if (typeof window !== 'undefined') {
           @click="isMobile && toggleMobileModal('kent', $event)"
         >
           <img src="/Kent.jpg" alt="Kent Book Cover" class="book-thumbnail" />
-          <span class="book-info">Master Kent - scheduled for release Jan. 15th, 2026</span>
+          <span class="book-info">Master Kent - release date Jan. 15th, 2026</span>
           <span v-if="isMobile" class="tap-hint">Tap for details</span>
         </li>
         <li
@@ -141,7 +141,7 @@ if (typeof window !== 'undefined') {
           @click="isMobile && toggleMobileModal('storm', $event)"
         >
           <img src="/Storm.jpg" alt="Storm Book Cover" class="book-thumbnail" />
-          <span class="book-info">Master Storm - scheduled for release Feb. 15th, 2026</span>
+          <span class="book-info">Master Storm - release date Feb. 15th, 2026</span>
           <span v-if="isMobile" class="tap-hint">Tap for details</span>
         </li>
         <li
@@ -151,7 +151,7 @@ if (typeof window !== 'undefined') {
           @click="isMobile && toggleMobileModal('mayson', $event)"
         >
           <img src="/Mayson.jpg" alt="Mayson Book Cover" class="book-thumbnail" />
-          <span class="book-info">Mayson - scheduled for release Mar. 15th, 2026</span>
+          <span class="book-info">Mayson - release date Mar. 15th, 2026</span>
           <span v-if="isMobile" class="tap-hint">Tap for details</span>
         </li>
       </ul>
