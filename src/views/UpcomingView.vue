@@ -104,12 +104,14 @@ if (typeof window !== 'undefined') {
         relationships (sibling),
       </p>
       <ul class="book-list">
-        <li
-          class="book-item"
-          @mouseenter="!isMobile && showModal('kent', $event)"
-          @click="isMobile && toggleMobileModal('kent', $event)"
-        >
-          <img src="/Kent.jpg" alt="Kent Book Cover" class="book-thumbnail" />
+        <li class="book-item">
+          <img
+            src="/Kent.jpg"
+            alt="Kent Book Cover"
+            class="book-thumbnail"
+            @mouseenter="!isMobile && showModal('kent', $event)"
+            @click="isMobile && toggleMobileModal('kent', $event)"
+          />
           <span class="book-info"
             >Master Kent - Preorder on
             <a
@@ -122,21 +124,25 @@ if (typeof window !== 'undefined') {
           >
           <span v-if="isMobile" class="tap-hint">Tap for details</span>
         </li>
-        <li
-          class="book-item"
-          @mouseenter="!isMobile && showModal('storm', $event)"
-          @click="isMobile && toggleMobileModal('storm', $event)"
-        >
-          <img src="/Storm.jpg" alt="Storm Book Cover" class="book-thumbnail" />
+        <li class="book-item">
+          <img
+            src="/Storm.jpg"
+            alt="Storm Book Cover"
+            class="book-thumbnail"
+            @mouseenter="!isMobile && showModal('storm', $event)"
+            @click="isMobile && toggleMobileModal('storm', $event)"
+          />
           <span class="book-info">Master Storm - release date Feb. 15th, 2026</span>
           <span v-if="isMobile" class="tap-hint">Tap for details</span>
         </li>
-        <li
-          class="book-item"
-          @mouseenter="!isMobile && showModal('mayson', $event)"
-          @click="isMobile && toggleMobileModal('mayson', $event)"
-        >
-          <img src="/Mayson.jpg" alt="Mayson Book Cover" class="book-thumbnail" />
+        <li class="book-item">
+          <img
+            src="/Mayson.jpg"
+            alt="Mayson Book Cover"
+            class="book-thumbnail"
+            @mouseenter="!isMobile && showModal('mayson', $event)"
+            @click="isMobile && toggleMobileModal('mayson', $event)"
+          />
           <span class="book-info">Mayson - release date Mar. 15th, 2026</span>
           <span v-if="isMobile" class="tap-hint">Tap for details</span>
         </li>
@@ -157,39 +163,47 @@ if (typeof window !== 'undefined') {
         loved one, bullying, emotional abuse
       </p>
       <ul class="book-list">
-        <li
-          class="book-item"
-          @mouseenter="!isMobile && showModal('jordan', $event)"
-          @click="isMobile && toggleMobileModal('jordan', $event)"
-        >
-          <img src="/Jordan.jpg" alt="Jordan Book Cover" class="book-thumbnail" />
+        <li class="book-item">
+          <img
+            src="/Jordan.jpg"
+            alt="Jordan Book Cover"
+            class="book-thumbnail"
+            @mouseenter="!isMobile && showModal('jordan', $event)"
+            @click="isMobile && toggleMobileModal('jordan', $event)"
+          />
           <span class="book-info">Jordan - releasing 2nd quarter 2026</span>
           <span v-if="isMobile" class="tap-hint">Tap for details</span>
         </li>
-        <li
-          class="book-item"
-          @mouseenter="!isMobile && showModal('phoenix', $event)"
-          @click="isMobile && toggleMobileModal('phoenix', $event)"
-        >
-          <img src="/Phoenix.jpg" alt="Phoenix Book Cover" class="book-thumbnail" />
+        <li class="book-item">
+          <img
+            src="/Phoenix.jpg"
+            alt="Phoenix Book Cover"
+            class="book-thumbnail"
+            @mouseenter="!isMobile && showModal('phoenix', $event)"
+            @click="isMobile && toggleMobileModal('phoenix', $event)"
+          />
           <span class="book-info">Phoenix - releasing 2nd quarter 2026</span>
           <span v-if="isMobile" class="tap-hint">Tap for details</span>
         </li>
-        <li
-          class="book-item"
-          @mouseenter="!isMobile && showModal('cole', $event)"
-          @click="isMobile && toggleMobileModal('cole', $event)"
-        >
-          <img src="/Cole.jpg" alt="Cole Book Cover" class="book-thumbnail" />
+        <li class="book-item">
+          <img
+            src="/Cole.jpg"
+            alt="Cole Book Cover"
+            class="book-thumbnail"
+            @mouseenter="!isMobile && showModal('cole', $event)"
+            @click="isMobile && toggleMobileModal('cole', $event)"
+          />
           <span class="book-info">Cole - releasing 2nd quarter 2026</span>
           <span v-if="isMobile" class="tap-hint">Tap for details</span>
         </li>
-        <li
-          class="book-item"
-          @mouseenter="!isMobile && showModal('micha', $event)"
-          @click="isMobile && toggleMobileModal('micha', $event)"
-        >
-          <img src="/Micha.jpg" alt="Micha Book Cover" class="book-thumbnail" />
+        <li class="book-item">
+          <img
+            src="/Micha.jpg"
+            alt="Micha Book Cover"
+            class="book-thumbnail"
+            @mouseenter="!isMobile && showModal('micha', $event)"
+            @click="isMobile && toggleMobileModal('micha', $event)"
+          />
           <span class="book-info">Micha - releasing 3rd quarter 2026</span>
           <span v-if="isMobile" class="tap-hint">Tap for details</span>
         </li>
