@@ -107,31 +107,21 @@ if (typeof window !== 'undefined') {
       <ul class="book-list">
         <li
           class="book-item"
-          @mouseenter="!isMobile && showModal('astrid', $event)"
-          @mouseleave="!isMobile && hideModal()"
-          @click="isMobile && toggleMobileModal('astrid', $event)"
-        >
-          <img src="/AstridCover.jpg" alt="Astrid Book Cover" class="book-thumbnail" />
-          <span class="book-info"
-            >Astrid - Preorder on
-            <a
-              href="https://www.amazon.com/dp/B0G492YL9B?binding=kindle_edition&ref_=ast_author_bsi"
-              target="_blank"
-              alt="Click link to preorder book"
-              >Amazon</a
-            >
-            - available Dec. 15th, 2025</span
-          >
-          <span v-if="isMobile" class="tap-hint">Tap for details</span>
-        </li>
-        <li
-          class="book-item"
           @mouseenter="!isMobile && showModal('kent', $event)"
           @mouseleave="!isMobile && hideModal()"
           @click="isMobile && toggleMobileModal('kent', $event)"
         >
           <img src="/Kent.jpg" alt="Kent Book Cover" class="book-thumbnail" />
-          <span class="book-info">Master Kent - release date Jan. 15th, 2026</span>
+          <span class="book-info"
+            >Master Kent - Preorder on
+            <a
+              href="https://www.amazon.com/gp/product/B0G75HV2KV?ref_=dbs_m_mng_rwt_calw_tkin_1&storeType=ebooks&qid=1765889944&sr=8-2"
+              target="_blank"
+              alt="Clink link to preorder book"
+              >Amazon</a
+            >
+            - release date Jan. 15th, 2026</span
+          >
           <span v-if="isMobile" class="tap-hint">Tap for details</span>
         </li>
         <li
@@ -216,17 +206,12 @@ if (typeof window !== 'undefined') {
 
     <!-- Modal -->
     <Transition name="modal">
-      <div
-        v-if="hoveredBook"
-        class="book-modal"
-        :style="{
-          left: modalPosition.x + 'px',
-          top: modalPosition.y + 'px',
-        }"
-      >
+      <div v-if="hoveredBook" class="book-modal">
         <div class="modal-content">
           <h4>{{ bookData[hoveredBook]?.title }}</h4>
-          <p>{{ bookData[hoveredBook]?.blurb }}</p>
+          <div v-for="(paragraph, index) in bookData[hoveredBook]?.blurb" :key="index">
+            <p>{{ paragraph }}</p>
+          </div>
           <button v-if="isMobile" @click="hoveredBook = null" class="close-btn">×</button>
         </div>
       </div>
@@ -234,204 +219,4 @@ if (typeof window !== 'undefined') {
   </div>
 </template>
 
-<style scoped>
-.upcoming-container {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
-  position: relative;
-}
-
-h2 {
-  text-align: center;
-  color: #333;
-  margin-bottom: 40px;
-}
-
-.series-section {
-  margin-bottom: 40px;
-}
-
-h3 {
-  margin: 20px 0;
-  color: #8c2cec;
-  font-size: 1.5rem;
-}
-
-.book-list {
-  list-style: none;
-  padding: 0;
-  margin: 20px 0;
-}
-
-.book-item {
-  display: flex;
-  align-items: center;
-  margin-bottom: 20px;
-  padding: 15px;
-  background-color: #e0d0d0;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  cursor: pointer;
-  transition: all 0.3s ease;
-  position: relative;
-}
-
-.book-item:hover {
-  background-color: #f0f0f0;
-  transform: translateY(-2px);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-}
-
-.book-thumbnail {
-  width: 80px;
-  height: 120px;
-  object-fit: cover;
-  border-radius: 4px;
-  margin-right: 20px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-}
-
-.placeholder-cover {
-  width: 80px;
-  height: 120px;
-  background: linear-gradient(135deg, #e0e0e0, #f0f0f0);
-  border: 2px dashed #ccc;
-  border-radius: 4px;
-  margin-right: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 0.8rem;
-  color: #888;
-  text-align: center;
-}
-
-.book-info {
-  font-size: 1.1rem;
-  color: #333;
-  font-weight: 500;
-  flex-grow: 1;
-}
-
-.tap-hint {
-  font-size: 0.9rem;
-  color: #b366ff;
-  font-style: italic;
-  margin-left: 10px;
-}
-
-/* Modal Styles */
-.book-modal {
-  position: fixed;
-  z-index: 1000;
-  background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
-  border: 1px solid #e0e0e0;
-  border-radius: 12px;
-  padding: 20px;
-  width: 320px;
-  min-height: 200px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
-  backdrop-filter: blur(10px);
-  pointer-events: none;
-}
-
-.modal-content {
-  position: relative;
-}
-
-.modal-content h4 {
-  margin: 0 0 10px 0;
-  color: #b366ff;
-  font-size: 1.1rem;
-  font-weight: 600;
-}
-
-.modal-content p {
-  margin: 0;
-  color: #333;
-  font-size: 0.9rem;
-  line-height: 1.4;
-}
-
-.close-btn {
-  position: absolute;
-  top: -5px;
-  right: -5px;
-  background: #b366ff;
-  color: white;
-  border: none;
-  border-radius: 50%;
-  width: 24px;
-  height: 24px;
-  font-size: 16px;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  pointer-events: auto;
-}
-
-.close-btn:hover {
-  background: #9a4dff;
-}
-
-/* Modal Transitions */
-.modal-enter-active,
-.modal-leave-active {
-  transition: all 0.3s ease;
-}
-
-.modal-enter-from,
-.modal-leave-to {
-  opacity: 0;
-  transform: scale(0.9) translateY(-10px);
-}
-
-/* Mobile Specific Styles */
-@media (max-width: 768px) {
-  .book-modal {
-    position: fixed;
-    left: 50% !important;
-    top: 50% !important;
-    transform: translate(-50%, -50%);
-    max-width: 90vw;
-    max-height: 80vh;
-    overflow-y: auto;
-    pointer-events: auto;
-  }
-
-  .tap-hint {
-    display: block;
-    margin-left: 0;
-    margin-top: 5px;
-  }
-}
-
-/* Responsive design */
-@media (max-width: 600px) {
-  .upcoming-container {
-    padding: 15px;
-  }
-
-  .book-item {
-    flex-direction: column;
-    text-align: center;
-    padding: 20px;
-  }
-
-  .book-thumbnail,
-  .placeholder-cover {
-    margin-right: 0;
-    margin-bottom: 15px;
-  }
-
-  h2 {
-    font-size: 1.8rem;
-  }
-
-  h3 {
-    font-size: 1.3rem;
-  }
-}
-</style>
+<style scoped></style>
