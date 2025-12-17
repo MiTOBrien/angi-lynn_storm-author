@@ -59,9 +59,8 @@ const toggleMobileModal = (bookId, event) => {
   }
 }
 
-// Close modal when clicking outside on mobile
 const closeModalOnClickOutside = (event) => {
-  if (isMobile.value && hoveredBook.value) {
+  if (hoveredBook.value) {
     const modal = document.querySelector('.book-modal')
     const bookItem = event.target.closest('.book-item')
 
@@ -108,7 +107,6 @@ if (typeof window !== 'undefined') {
         <li
           class="book-item"
           @mouseenter="!isMobile && showModal('kent', $event)"
-          @mouseleave="!isMobile && hideModal()"
           @click="isMobile && toggleMobileModal('kent', $event)"
         >
           <img src="/Kent.jpg" alt="Kent Book Cover" class="book-thumbnail" />
@@ -127,7 +125,6 @@ if (typeof window !== 'undefined') {
         <li
           class="book-item"
           @mouseenter="!isMobile && showModal('storm', $event)"
-          @mouseleave="!isMobile && hideModal()"
           @click="isMobile && toggleMobileModal('storm', $event)"
         >
           <img src="/Storm.jpg" alt="Storm Book Cover" class="book-thumbnail" />
@@ -137,7 +134,6 @@ if (typeof window !== 'undefined') {
         <li
           class="book-item"
           @mouseenter="!isMobile && showModal('mayson', $event)"
-          @mouseleave="!isMobile && hideModal()"
           @click="isMobile && toggleMobileModal('mayson', $event)"
         >
           <img src="/Mayson.jpg" alt="Mayson Book Cover" class="book-thumbnail" />
@@ -164,7 +160,6 @@ if (typeof window !== 'undefined') {
         <li
           class="book-item"
           @mouseenter="!isMobile && showModal('jordan', $event)"
-          @mouseleave="!isMobile && hideModal()"
           @click="isMobile && toggleMobileModal('jordan', $event)"
         >
           <img src="/Jordan.jpg" alt="Jordan Book Cover" class="book-thumbnail" />
@@ -174,7 +169,6 @@ if (typeof window !== 'undefined') {
         <li
           class="book-item"
           @mouseenter="!isMobile && showModal('phoenix', $event)"
-          @mouseleave="!isMobile && hideModal()"
           @click="isMobile && toggleMobileModal('phoenix', $event)"
         >
           <img src="/Phoenix.jpg" alt="Phoenix Book Cover" class="book-thumbnail" />
@@ -184,7 +178,6 @@ if (typeof window !== 'undefined') {
         <li
           class="book-item"
           @mouseenter="!isMobile && showModal('cole', $event)"
-          @mouseleave="!isMobile && hideModal()"
           @click="isMobile && toggleMobileModal('cole', $event)"
         >
           <img src="/Cole.jpg" alt="Cole Book Cover" class="book-thumbnail" />
@@ -194,7 +187,6 @@ if (typeof window !== 'undefined') {
         <li
           class="book-item"
           @mouseenter="!isMobile && showModal('micha', $event)"
-          @mouseleave="!isMobile && hideModal()"
           @click="isMobile && toggleMobileModal('micha', $event)"
         >
           <img src="/Micha.jpg" alt="Micha Book Cover" class="book-thumbnail" />
