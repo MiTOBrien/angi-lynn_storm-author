@@ -18,6 +18,11 @@ const router = createRouter({
       component: () => import('../views/AboutView.vue'),
     },
     {
+      path: '/current',
+      name: 'current',
+      component: () => import('../views/CurrentView.vue'),
+    },
+    {
       path: '/upcoming',
       name: 'upcoming',
       component: () => import('../views/UpcomingView.vue'),

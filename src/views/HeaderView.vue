@@ -22,8 +22,8 @@ const closeMenu = () => {
     <!-- Desktop navigation -->
     <div class="right-nav desktop-nav">
       <RouterLink class="nav-link" to="/about">About</RouterLink>
+      <RouterLink class="nav-link" to="/current">Current</RouterLink>
       <RouterLink class="nav-link" to="/upcoming">Upcoming</RouterLink>
-      <RouterLink class="nav-link" to="/beta">Beta Reader Program</RouterLink>
     </div>
 
     <!-- Mobile hamburger button -->
