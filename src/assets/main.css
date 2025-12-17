@@ -115,10 +115,10 @@ h3 {
   position: fixed;
   left: 50%;
   top: 50%;
-  transform: translate(-50%, -50%); /* centers horizontally & vertically */
+  transform: translate(-50%, -50%);
   width: 320px;
-  max-height: 80vh;   /* allow tall blurbs */
-  overflow-y: auto;   /* scroll if content is too long */
+  max-height: 80vh;
+  overflow-y: auto;
   z-index: 1000;
   background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
   border: 1px solid #e0e0e0;
@@ -126,7 +126,7 @@ h3 {
   padding: 20px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
   backdrop-filter: blur(10px);
-  pointer-events: auto; /* allow clicks inside */
+  pointer-events: auto;
 }
 
 .modal-content {

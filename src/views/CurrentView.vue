@@ -58,9 +58,8 @@ const toggleMobileModal = (bookId, event) => {
   }
 }
 
-// Close modal when clicking outside on mobile
 const closeModalOnClickOutside = (event) => {
-  if (isMobile.value && hoveredBook.value) {
+  if (hoveredBook.value) {
     const modal = document.querySelector('.book-modal')
     const bookItem = event.target.closest('.book-item')
 
@@ -122,7 +121,6 @@ if (typeof window !== 'undefined') {
         <li
           class="book-item"
           @mouseenter="!isMobile && showModal('wolzen1', $event)"
-          @mouseleave="!isMobile && hideModal()"
           @click="isMobile && toggleMobileModal('wolzen1', $event)"
         >
           <img
@@ -136,7 +134,6 @@ if (typeof window !== 'undefined') {
         <li
           class="book-item"
           @mouseenter="!isMobile && showModal('wolzen2', $event)"
-          @mouseleave="!isMobile && hideModal()"
           @click="isMobile && toggleMobileModal('wolzen2', $event)"
         >
           <img
@@ -150,7 +147,6 @@ if (typeof window !== 'undefined') {
         <li
           class="book-item"
           @mouseenter="!isMobile && showModal('wolzen3', $event)"
-          @mouseleave="!isMobile && hideModal()"
           @click="isMobile && toggleMobileModal('wolzen3', $event)"
         >
           <img
@@ -198,7 +194,6 @@ if (typeof window !== 'undefined') {
         <li
           class="book-item"
           @mouseenter="!isMobile && showModal('astrid', $event)"
-          @mouseleave="!isMobile && hideModal()"
           @click="isMobile && toggleMobileModal('astrid', $event)"
         >
           <img src="/AstridCover.jpg" alt="Astrid Book Cover" class="book-thumbnail" />
