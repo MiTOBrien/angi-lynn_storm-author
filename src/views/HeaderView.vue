@@ -36,8 +36,8 @@ const closeMenu = () => {
     <!-- Mobile navigation menu -->
     <div class="mobile-nav" :class="{ open: isMenuOpen }">
       <RouterLink class="nav-link" to="/about" @click="closeMenu">About</RouterLink>
+      <RouterLink class="nav-link" to="/current" @click="closeMenu">Current</RouterLink>
       <RouterLink class="nav-link" to="/upcoming" @click="closeMenu">Upcoming</RouterLink>
-      <RouterLink class="nav-link" to="/beta" @click="closeMenu">Beta Reader Program</RouterLink>
     </div>
   </nav>
 </template>
