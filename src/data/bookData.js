@@ -109,7 +109,21 @@ export const bookData = {
   mayson: {
     title: 'Mayson',
     blurb: [
-      `After escaping the darkness of his past, Mayson has spent two years finding quiet refuge at the Majestic Mountain Inn. But peace doesn't come easy. As he begins to explore a new side of himself, hes faced with the pull of old habits and the fear of never truly belonging. Through trust, connection, and the care of those around him, Mayson discovers that love isn't just something to give—it's something he's worthy of receiving.`,
+      `On his eighteenth birthday, Mayson is pushed out of the only home he’s ever known and into a world he never prepared for. Yet with stubborn optimism as his guiding star, he seizes the chance to build a new life in a new state—one filled with friends, freedom, and discoveries that reshape everything he thought he understood about himself. New layers of his personality emerge, including a playful side desperate to climb every tree in sight… and a capacity for love he never imagined.`,
+
+      `Marcus, worn down by the noise and grind of DC, follows his friends Dorian and Jared to Colorado in search of peace—and maybe a second chance with his college love, Lennox. But a chance encounter with a bright, endearing young man awakens a spark Marcus didn’t expect. Soon, he becomes determined to forge a future where all three of their lives intertwine.`,
+
+      `Lennox never planned on returning to the past he fled after law school. Building a thriving law firm in Denver became his entire world. Seeing Marcus again after decades feels impossible… until it isn’t. And falling for the younger man Marcus brings into his orbit? He never believed his heart had space for something so unexpected.`,
+
+      `Three men, each carrying their own hopes and heartbreaks.`,
+      `Three paths colliding in the Colorado mountains.`,
+      `One love story bold enough to bind them together.`,
+
+      `This book is intended for mature readers over 18.`,
+
+      `This is a why-choose, low-spice, slice-of-life series. The series is written as a series of scrapbook pages, with journal entries that tell the stories of our characters as they reminisce.`,
+
+      `Please read the trigger warning at the beginning of each book. There are aspects of BDSM in this series: Pet play, floggers, whips, fire play, and most importantly, Domination and submission.`,
     ],
   },
   jordan: {
