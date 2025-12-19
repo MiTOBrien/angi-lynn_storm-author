@@ -80,14 +80,7 @@ if (typeof window !== 'undefined') {
     <h2>Current Releases</h2>
     <section class="series-section">
       <h3>Wolzen-Whitaker Academy Series</h3>
-      <h4>
-        Find on:<a
-          href="https://www.amazon.com/dp/B0DPVJMQ4T?binding=kindle_edition&searchxofy=true&ref_=dbs_s_aps_series_rwt_tkin&qid=1766152917&sr=8-1"
-          target="_blank"
-          alt="Series on Amazon"
-          >Amazon</a
-        >
-      </h4>
+      <h4>Series Information:</h4>
       <p>
         For eleven years, Madison survived the foster system by counting the days until she could
         finally escape. She never imagined that escape would come through fire—or that it would
@@ -125,7 +118,7 @@ if (typeof window !== 'undefined') {
         Reverse harem, paranormal romance, shape-shifters, vampires, magic school, found family<br />
       </p>
       <ul class="book-list">
-        <li class="current-book-item">
+        <li class="book-item">
           <img
             src="/Wolzen1.jpg"
             alt="Wolzen-Whitaker Academy Book 1 Cover"
@@ -135,7 +128,7 @@ if (typeof window !== 'undefined') {
           />
           <span v-if="isMobile" class="tap-hint">Tap for details</span>
         </li>
-        <li class="current-book-item">
+        <li class="book-item">
           <img
             src="/Wolzen2.jpg"
             alt="Wolzen-Whitaker Academy Book 2 Cover"
@@ -145,7 +138,7 @@ if (typeof window !== 'undefined') {
           />
           <span v-if="isMobile" class="tap-hint">Tap for details</span>
         </li>
-        <li class="current-book-item">
+        <li class="book-item">
           <img
             src="/Wolzen3.jpg"
             alt="Wolzen-Whitaker Academy Book 3 Cover"
@@ -160,14 +153,7 @@ if (typeof window !== 'undefined') {
 
     <section class="series-section">
       <h3>Captured Memories Series</h3>
-      <h4>
-        Find on:<a
-          href="https://www.amazon.com/dp/B0G492YL9B?binding=kindle_edition&ref_=ast_author_bsi"
-          target="_blank"
-          alt="Series on Amazon"
-          >Amazon</a
-        >
-      </h4>
+      <h4>Series Information:</h4>
       <p>
         When friends who are closer than family gather for Thanksgiving, their conversation
         naturally circles back to the first meal many of them ever shared—setting off a wave of
@@ -196,7 +182,7 @@ if (typeof window !== 'undefined') {
         relationships (sibling),
       </p>
       <ul class="book-list">
-        <li class="current-book-item">
+        <li class="book-item">
           <img
             src="/AstridCover.jpg"
             alt="Astrid Book Cover"
