@@ -113,14 +113,14 @@ if (typeof window !== 'undefined') {
             @click="isMobile && toggleMobileModal('kent', $event)"
           />
           <span class="book-info"
-            >Master Kent - Preorder on
+            >Master Kent - 
             <a
               href="https://www.amazon.com/gp/product/B0G75HV2KV?ref_=dbs_m_mng_rwt_calw_tkin_1&storeType=ebooks&qid=1765889944&sr=8-2"
               target="_blank"
               alt="Clink link to preorder book"
-              >Amazon</a
+              >Preorder</a
             >
-            - release date Jan. 15th, 2026</span
+            - releasing Jan. 15th, 2026</span
           >
           <span v-if="isMobile" class="tap-hint">Tap for details</span>
         </li>
@@ -132,7 +132,7 @@ if (typeof window !== 'undefined') {
             @mouseenter="!isMobile && showModal('storm', $event)"
             @click="isMobile && toggleMobileModal('storm', $event)"
           />
-          <span class="book-info">Master Storm - release date Feb. 15th, 2026</span>
+          <span class="book-info">Master Storm - releasing Feb. 15th, 2026</span>
           <span v-if="isMobile" class="tap-hint">Tap for details</span>
         </li>
         <li class="book-item">
@@ -143,7 +143,7 @@ if (typeof window !== 'undefined') {
             @mouseenter="!isMobile && showModal('mayson', $event)"
             @click="isMobile && toggleMobileModal('mayson', $event)"
           />
-          <span class="book-info">Mayson - release date Mar. 15th, 2026</span>
+          <span class="book-info">Mayson - releasing Mar. 15th, 2026</span>
           <span v-if="isMobile" class="tap-hint">Tap for details</span>
         </li>
       </ul>

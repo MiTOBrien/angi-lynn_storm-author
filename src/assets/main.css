@@ -24,7 +24,8 @@ footer {
   margin-top: auto;
 }
 
-.current-container, .upcoming-container {
+.current-container,
+.upcoming-container {
   max-width: 800px;
   margin: 0 auto;
   padding: 20px;
@@ -49,8 +50,23 @@ h3 {
 
 .book-list {
   list-style: none;
+  display: flex;
+  justify-content: center; /* centers the row */
+  gap: 20px;
   padding: 0;
   margin: 20px 0;
+}
+
+.current-book-item {
+  display: inline;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
 }
 
 .book-item {
@@ -58,7 +74,7 @@ h3 {
   align-items: center;
   margin-bottom: 20px;
   padding: 15px;
-  background-color: #e0d0d0;
+  /* background-color: #e0d0d0; */
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   cursor: pointer;
