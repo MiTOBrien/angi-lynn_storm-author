@@ -122,7 +122,7 @@ if (typeof window !== 'undefined') {
             >
             - releasing Jan. 15th, 2026</span
           >
-          <span v-if="isMobile" class="tap-hint">Tap for details</span>
+          <span v-if="isMobile" class="tap-hint">Tap cover for details</span>
         </li>
         <li class="book-item">
           <img
@@ -133,7 +133,7 @@ if (typeof window !== 'undefined') {
             @click="isMobile && toggleMobileModal('storm', $event)"
           />
           <span class="book-info">Master Storm - releasing Feb. 15th, 2026</span>
-          <span v-if="isMobile" class="tap-hint">Tap for details</span>
+          <span v-if="isMobile" class="tap-hint">Tap cover for details</span>
         </li>
         <li class="book-item">
           <img
@@ -144,7 +144,7 @@ if (typeof window !== 'undefined') {
             @click="isMobile && toggleMobileModal('mayson', $event)"
           />
           <span class="book-info">Mayson - releasing Mar. 15th, 2026</span>
-          <span v-if="isMobile" class="tap-hint">Tap for details</span>
+          <span v-if="isMobile" class="tap-hint">Tap cover for details</span>
         </li>
       </ul>
     </section>
@@ -172,7 +172,7 @@ if (typeof window !== 'undefined') {
             @click="isMobile && toggleMobileModal('jordan', $event)"
           />
           <span class="book-info">Jordan - releasing 2nd quarter 2026</span>
-          <span v-if="isMobile" class="tap-hint">Tap for details</span>
+          <span v-if="isMobile" class="tap-hint">Tap cover for details</span>
         </li>
         <li class="book-item">
           <img
@@ -183,7 +183,7 @@ if (typeof window !== 'undefined') {
             @click="isMobile && toggleMobileModal('phoenix', $event)"
           />
           <span class="book-info">Phoenix - releasing 2nd quarter 2026</span>
-          <span v-if="isMobile" class="tap-hint">Tap for details</span>
+          <span v-if="isMobile" class="tap-hint">Tap cover for details</span>
         </li>
         <li class="book-item">
           <img
@@ -194,7 +194,7 @@ if (typeof window !== 'undefined') {
             @click="isMobile && toggleMobileModal('cole', $event)"
           />
           <span class="book-info">Cole - releasing 2nd quarter 2026</span>
-          <span v-if="isMobile" class="tap-hint">Tap for details</span>
+          <span v-if="isMobile" class="tap-hint">Tap cover for details</span>
         </li>
         <li class="book-item">
           <img
@@ -205,7 +205,7 @@ if (typeof window !== 'undefined') {
             @click="isMobile && toggleMobileModal('micha', $event)"
           />
           <span class="book-info">Micha - releasing 3rd quarter 2026</span>
-          <span v-if="isMobile" class="tap-hint">Tap for details</span>
+          <span v-if="isMobile" class="tap-hint">Tap cover for details</span>
         </li>
       </ul>
     </section>

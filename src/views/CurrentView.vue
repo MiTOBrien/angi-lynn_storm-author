@@ -126,7 +126,7 @@ if (typeof window !== 'undefined') {
             @mouseenter="!isMobile && showModal('wolzen1', $event)"
             @click="isMobile && toggleMobileModal('wolzen1', $event)"
           />
-          <span v-if="isMobile" class="tap-hint">Tap for details</span>
+          <span v-if="isMobile" class="tap-hint">Tap cover for details</span>
         </li>
         <li class="book-item">
           <img
@@ -136,7 +136,7 @@ if (typeof window !== 'undefined') {
             @mouseenter="!isMobile && showModal('wolzen2', $event)"
             @click="isMobile && toggleMobileModal('wolzen2', $event)"
           />
-          <span v-if="isMobile" class="tap-hint">Tap for details</span>
+          <span v-if="isMobile" class="tap-hint">Tap cover for details</span>
         </li>
         <li class="book-item">
           <img
@@ -146,7 +146,7 @@ if (typeof window !== 'undefined') {
             @mouseenter="!isMobile && showModal('wolzen3', $event)"
             @click="isMobile && toggleMobileModal('wolzen3', $event)"
           />
-          <span v-if="isMobile" class="tap-hint">Tap for details</span>
+          <span v-if="isMobile" class="tap-hint">Tap cover for details</span>
         </li>
       </ul>
     </section>
@@ -190,7 +190,7 @@ if (typeof window !== 'undefined') {
             @mouseenter="!isMobile && showModal('astrid', $event)"
             @click="isMobile && toggleMobileModal('astrid', $event)"
           />
-          <span v-if="isMobile" class="tap-hint">Tap for details</span>
+          <span v-if="isMobile" class="tap-hint">Tap cover for details</span>
         </li>
       </ul>
     </section>
