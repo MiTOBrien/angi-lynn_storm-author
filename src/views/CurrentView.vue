@@ -80,7 +80,14 @@ if (typeof window !== 'undefined') {
     <h2>Current Releases</h2>
     <section class="series-section">
       <h3>Wolzen-Whitaker Academy Series</h3>
-      <h4>Series Information:</h4>
+      <h4>
+        Find on:<a
+          href="https://www.amazon.com/dp/B0DPVJMQ4T?binding=kindle_edition&searchxofy=true&ref_=dbs_s_aps_series_rwt_tkin&qid=1766152917&sr=8-1"
+          target="_blank"
+          alt="Series on Amazon"
+          >Amazon</a
+        >
+      </h4>
       <p>
         For eleven years, Madison survived the foster system by counting the days until she could
         finally escape. She never imagined that escape would come through fire—or that it would
@@ -118,7 +125,7 @@ if (typeof window !== 'undefined') {
         Reverse harem, paranormal romance, shape-shifters, vampires, magic school, found family<br />
       </p>
       <ul class="book-list">
-        <li class="book-item">
+        <li class="current-book-item">
           <img
             src="/Wolzen1.jpg"
             alt="Wolzen-Whitaker Academy Book 1 Cover"
@@ -126,18 +133,9 @@ if (typeof window !== 'undefined') {
             @mouseenter="!isMobile && showModal('wolzen1', $event)"
             @click="isMobile && toggleMobileModal('wolzen1', $event)"
           />
-          <span class="book-info"
-            >Madison's New Beginning -
-            <a
-              href="https://www.amazon.com/gp/product/B0DPTJJ5J9?ref_=dbs_m_mng_rwt_calw_tkin_0&storeType=ebooks"
-              target="_blank"
-              alt="Buy on Amazon"
-              >Amazon</a
-            ></span
-          >
           <span v-if="isMobile" class="tap-hint">Tap for details</span>
         </li>
-        <li class="book-item">
+        <li class="current-book-item">
           <img
             src="/Wolzen2.jpg"
             alt="Wolzen-Whitaker Academy Book 2 Cover"
@@ -145,18 +143,9 @@ if (typeof window !== 'undefined') {
             @mouseenter="!isMobile && showModal('wolzen2', $event)"
             @click="isMobile && toggleMobileModal('wolzen2', $event)"
           />
-          <span class="book-info"
-            >The Trials -
-            <a
-              href="https://www.amazon.com/gp/product/B0DPTQG9HW?ref_=dbs_m_mng_rwt_calw_tkin_1&storeType=ebooks"
-              target="_blank"
-              alt="Buy on Amazon"
-              >Amazon</a
-            ></span
-          >
           <span v-if="isMobile" class="tap-hint">Tap for details</span>
         </li>
-        <li class="book-item">
+        <li class="current-book-item">
           <img
             src="/Wolzen3.jpg"
             alt="Wolzen-Whitaker Academy Book 3 Cover"
@@ -164,15 +153,6 @@ if (typeof window !== 'undefined') {
             @mouseenter="!isMobile && showModal('wolzen3', $event)"
             @click="isMobile && toggleMobileModal('wolzen3', $event)"
           />
-          <span class="book-info"
-            >The Beginning of the End -
-            <a
-              href="https://www.amazon.com/gp/product/B0DPVKB8LM?ref_=dbs_m_mng_rwt_calw_tkin_2&storeType=ebooks"
-              target="_blank"
-              alt="Buy on Amazon"
-              >Amazon</a
-            ></span
-          >
           <span v-if="isMobile" class="tap-hint">Tap for details</span>
         </li>
       </ul>
@@ -180,7 +160,14 @@ if (typeof window !== 'undefined') {
 
     <section class="series-section">
       <h3>Captured Memories Series</h3>
-      <h4>Series Information:</h4>
+      <h4>
+        Find on:<a
+          href="https://www.amazon.com/dp/B0G492YL9B?binding=kindle_edition&ref_=ast_author_bsi"
+          target="_blank"
+          alt="Series on Amazon"
+          >Amazon</a
+        >
+      </h4>
       <p>
         When friends who are closer than family gather for Thanksgiving, their conversation
         naturally circles back to the first meal many of them ever shared—setting off a wave of
@@ -209,7 +196,7 @@ if (typeof window !== 'undefined') {
         relationships (sibling),
       </p>
       <ul class="book-list">
-        <li class="book-item">
+        <li class="current-book-item">
           <img
             src="/AstridCover.jpg"
             alt="Astrid Book Cover"
@@ -217,15 +204,6 @@ if (typeof window !== 'undefined') {
             @mouseenter="!isMobile && showModal('astrid', $event)"
             @click="isMobile && toggleMobileModal('astrid', $event)"
           />
-          <span class="book-info"
-            >Astrid -
-            <a
-              href="https://www.amazon.com/gp/product/B0G45CTXDV?ref_=dbs_m_mng_rwt_calw_tkin_0&storeType=ebooks"
-              target="_blank"
-              alt="Click link to preorder book"
-              >Amazon</a
-            ></span
-          >
           <span v-if="isMobile" class="tap-hint">Tap for details</span>
         </li>
       </ul>
