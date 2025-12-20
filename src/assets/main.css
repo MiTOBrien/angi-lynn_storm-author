@@ -217,7 +217,7 @@ h3 {
 }
 
 /* Responsive design */
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .upcoming-container {
     padding: 15px;
   }
@@ -226,6 +226,11 @@ h3 {
     flex-direction: column;
     text-align: center;
     padding: 20px;
+  }
+
+  .book-list {
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
   .book-thumbnail,
