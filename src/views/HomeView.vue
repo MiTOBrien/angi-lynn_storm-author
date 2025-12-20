@@ -523,6 +523,10 @@ h2 {
     padding: 20px;
     max-width: 100%;
   }
+ 
+  .review-card {
+    box-sizing: border-box;
+  }
 
   .review-header {
     flex-direction: column;
