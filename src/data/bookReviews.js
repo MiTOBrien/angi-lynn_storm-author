@@ -1,4 +1,3 @@
-// bookReviews.js - Centralized reviews data
 export const bookReviews = [
   {
     id: 1,
@@ -47,6 +46,20 @@ export const bookReviews = [
     reviewer: "Koneko327",
     source: "Amazon",
     book: "Wolzen-Whitaker Academy - Book 3 : The Beginning of the End"
+  },
+  {
+    id: 7,
+    rating: 5,
+    text: `I am an avid reader and love to explore various genres that different authors choose to explore. When I saw this book by Angi-Lynn Storm that explores BDSM I had to read it. I am so glad I did and if you enjoy compelling stories that deal with love, loss, trust and exploration of new experiences in life you will as well. This is a must read book.
+
+    This book is extremely well-written, tells a compelling story that draws you in, and addresses consensual BDSM in a well thought out and insightful manner. The character development is excellent and gives you insight into each characters life and you feel like you get to know each character as they are introduced. As the story progresses you will explore a full range of emotions - laughing, crying, getting mad and frustrated as various situations arise. The characters deal with real life situations that are easy to relate to as they struggle with situations that we've all had to deal with at some point and in some fashion. As a long time BDSM practitioner I appreciate the attention to detail and care that the author used in their BDSM scenes - addressing core issues like consent, safe words, safety concerns in the various types of play and how consensual BDSM is different from abuse.
+
+    The only somewhat negative point of this book that I can touch on is this - Early on in the book, one of the male characters who has some computer skills develops an interest in Astrid. Before he meets her he starts following her, hacking some of her online social media accounts, etc. in the guise of 'getting to know her' and to help 'protect her'. While he is a 'good guy' in the book the actions are very stalkerish and in the realm of BDSM where consent is everything the actions of this character disturbed me as I read through some of the actions he chose to take and thought were acceptable.
+
+    It is a minor point of the overall story and I still wholly endorse a 5 star rating for this book.`,
+    reviewer: "Koneko327",
+    source: "Amazon",
+    book: "Astrid: Captured Memories Book 1"
   }
 ]
 
