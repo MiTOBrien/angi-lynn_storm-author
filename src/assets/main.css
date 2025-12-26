@@ -24,6 +24,253 @@ footer {
   margin-top: auto;
 }
 
+/* Carousel Styles */
+.carousel-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 400px;
+  width: 100%;
+}
+
+.carousel {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.8s ease-in-out;
+}
+
+.carousel-slide {
+  min-width: 100%;
+  width: 100%;
+  flex-shrink: 0;
+}
+
+.book-cover {
+  width: 100%;
+  height: 500px;
+  object-fit: contain;
+  display: block;
+}
+
+.carousel-indicators {
+  display: flex;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.indicator {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: none;
+  background-color: #ccc;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.indicator.active {
+  background-color: #b366ff;
+}
+
+.indicator:hover {
+  background-color: #999;
+}
+
+/* Reviews Section Styles */
+.reviews-section {
+  width: 100%;
+  max-width: 1200px;
+  margin: 60px 0 40px 0;
+  padding: 0 20px;
+}
+
+.reviews-section h3 {
+  text-align: center;
+  font-size: 2.2rem;
+  color: #333;
+  margin-bottom: 30px;
+  font-weight: 600;
+}
+
+/* Review Filters */
+.review-filters {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+.filter-btn {
+  padding: 10px 20px;
+  border: 2px solid #b366ff;
+  background: white;
+  color: #b366ff;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+.filter-btn:hover {
+  background: #b366ff;
+  color: white;
+}
+
+.filter-btn.active {
+  background: #b366ff;
+  color: white;
+}
+
+.filter-dropdown {
+  margin-left: 10px;
+}
+
+.book-filter {
+  padding: 8px 15px;
+  border: 2px solid #b366ff;
+  border-radius: 20px;
+  background: white;
+  color: #333;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.book-filter:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(179, 102, 255, 0.3);
+}
+
+.reviews-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 30px;
+  justify-items: center;
+  margin-bottom: 30px;
+}
+
+.review-card {
+  background: white;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+  max-width: 400px;
+  width: 100%;
+  border-left: 4px solid #b366ff;
+}
+
+.review-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.review-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 15px;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.stars {
+  color: #b366ff;
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+}
+
+.rating-number {
+  font-size: 0.9rem;
+  color: #666;
+  font-weight: 500;
+}
+
+.review-source {
+  text-align: right;
+  font-size: 0.85rem;
+}
+
+.book-title {
+  display: block;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 2px;
+}
+
+.source {
+  color: #666;
+  font-style: italic;
+}
+
+.review-text {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #444;
+  margin-bottom: 15px;
+  font-style: italic;
+}
+
+.reviewer {
+  text-align: right;
+}
+
+.reviewer-name {
+  font-size: 0.9rem;
+  color: #666;
+  font-weight: 500;
+}
+
+/* Show More Button */
+.show-more-container {
+  text-align: center;
+  margin: 30px 0;
+}
+
+.show-more-btn {
+  padding: 12px 30px;
+  background: #b366ff;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.show-more-btn:hover {
+  background: #9a4eeb;
+  transform: translateY(-1px);
+}
+
+/* Reviews Summary */
+.reviews-summary {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.reviews-summary p {
+  color: #666;
+  font-size: 0.9rem;
+  font-style: italic;
+}
+
 .current-container,
 .upcoming-container {
   max-width: 800px;
