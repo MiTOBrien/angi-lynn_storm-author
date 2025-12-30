@@ -13,13 +13,21 @@ let intervalId = null
 
 const bookCovers = ['AstridCover.jpg', 'Wolzen1.jpg', 'Wolzen2.jpg', 'Wolzen3.jpg']
 
+// Map bookId → full title
+const bookTitleMap = {
+  wwa1: "Wolzen-Whitaker Academy - Book 1 : Madison's New Beginning",
+  wwa2: "Wolzen-Whitaker Academy - Book 2 : The Trials",
+  wwa3: "Wolzen-Whitaker Academy - Book 3 : The Beginning of the End",
+  astrid1: "Astrid: Captured Memories Book 1"
+}
+
 // Review filtering state
 const selectedFilter = ref('featured')
 const showAllReviews = ref(false)
 const reviewsToShow = ref(3)
 
-// Get unique book titles and sources for filter options
-const bookTitles = [...new Set(bookReviews.map((review) => review.book))]
+// Unique book IDs and sources
+const bookIds = [...new Set(bookReviews.map((review) => review.bookId))]
 const reviewSources = [...new Set(bookReviews.map((review) => review.source))]
 
 // Computed property for filtered reviews
@@ -34,11 +42,11 @@ const filteredReviews = computed(() => {
       reviews = bookReviews
       break
     default:
-      // Check if it's a book filter
-      if (bookTitles.includes(selectedFilter.value)) {
+      // Book filter
+      if (bookIds.includes(selectedFilter.value)) {
         reviews = getReviewsByBook(selectedFilter.value)
       }
-      // Check if it's a source filter
+      // Source filter
       else if (reviewSources.includes(selectedFilter.value)) {
         reviews = getReviewsBySource(selectedFilter.value)
       } else {
@@ -46,7 +54,6 @@ const filteredReviews = computed(() => {
       }
   }
 
-  // Limit reviews if not showing all
   return showAllReviews.value ? reviews : reviews.slice(0, reviewsToShow.value)
 })
 
@@ -82,7 +89,7 @@ const hasMoreReviews = computed(() => {
       ? getFeaturedReviews().length
       : selectedFilter.value === 'all'
         ? bookReviews.length
-        : bookTitles.includes(selectedFilter.value)
+        : bookIds.includes(selectedFilter.value)
           ? getReviewsByBook(selectedFilter.value).length
           : reviewSources.includes(selectedFilter.value)
             ? getReviewsBySource(selectedFilter.value).length
@@ -115,7 +122,6 @@ onUnmounted(() => {
         </div>
       </div>
 
-      <!-- Carousel indicators -->
       <div class="carousel-indicators">
         <button
           v-for="(cover, index) in bookCovers"
@@ -144,6 +150,7 @@ onUnmounted(() => {
         >
           All Reviews
         </button>
+
         <div class="filter-dropdown">
           <select
             v-model="selectedFilter"
@@ -152,9 +159,17 @@ onUnmounted(() => {
           >
             <option value="featured">Featured Reviews</option>
             <option value="all">All Reviews</option>
+
             <optgroup label="By Book">
-              <option v-for="book in bookTitles" :key="book" :value="book">{{ book }}</option>
+              <option
+                v-for="id in bookIds"
+                :key="id"
+                :value="id"
+              >
+                {{ bookTitleMap[id] }}
+              </option>
             </optgroup>
+
             <optgroup label="By Source">
               <option v-for="source in reviewSources" :key="source" :value="source">
                 {{ source }}
@@ -172,23 +187,29 @@ onUnmounted(() => {
               <span class="rating-number">{{ review.rating }}/5</span>
             </div>
             <div class="review-source">
-              <span class="book-title">{{ review.book }}</span>
+              <span class="book-title">{{ bookTitleMap[review.bookId] }}</span>
               <span class="source">{{ review.source }}</span>
             </div>
           </div>
-          <p class="review-text">{{ review.text }}</p>
+
+          <p
+            v-for="(para, i) in review.text"
+            :key="i"
+            class="review-text"
+          >
+            {{ para }}
+          </p>
+
           <div class="reviewer">
             <span class="reviewer-name">— {{ review.reviewer }}</span>
           </div>
         </div>
       </div>
 
-      <!-- Show More Button -->
       <div v-if="hasMoreReviews" class="show-more-container">
         <button @click="showMoreReviews" class="show-more-btn">Show More Reviews</button>
       </div>
 
-      <!-- Reviews Summary -->
       <div class="reviews-summary">
         <p>
           Showing {{ filteredReviews.length }} of
@@ -197,7 +218,7 @@ onUnmounted(() => {
               ? getFeaturedReviews().length
               : selectedFilter === 'all'
                 ? bookReviews.length
-                : bookTitles.includes(selectedFilter)
+                : bookIds.includes(selectedFilter)
                   ? getReviewsByBook(selectedFilter).length
                   : reviewSources.includes(selectedFilter)
                     ? getReviewsBySource(selectedFilter).length
@@ -214,8 +235,9 @@ onUnmounted(() => {
         href="https://reamstories.com/page/m3bk90e3vp/public"
         alt="Ream Stories page"
         target="_blank"
-        >Ream Stories.</a
       >
+        Ream Stories.
+      </a>
     </p>
   </main>
 </template>
@@ -234,6 +256,252 @@ h2 {
   color: #333;
   font-size: 2.5rem;
   text-align: center;
+}
+
+.carousel-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 400px;
+  width: 100%;
+}
+
+.carousel {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.8s ease-in-out;
+}
+
+.carousel-slide {
+  min-width: 100%;
+  width: 100%;
+  flex-shrink: 0;
+}
+
+.book-cover {
+  width: 100%;
+  height: 500px;
+  object-fit: contain;
+  display: block;
+}
+
+.carousel-indicators {
+  display: flex;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.indicator {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: none;
+  background-color: #ccc;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.indicator.active {
+  background-color: #b366ff;
+}
+
+.indicator:hover {
+  background-color: #999;
+}
+
+/* Reviews Section Styles */
+.reviews-section {
+  width: 100%;
+  max-width: 1200px;
+  margin: 60px 0 40px 0;
+  padding: 0 20px;
+}
+
+.reviews-section h3 {
+  text-align: center;
+  font-size: 2.2rem;
+  color: #333;
+  margin-bottom: 30px;
+  font-weight: 600;
+}
+
+/* Review Filters */
+.review-filters {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+.filter-btn {
+  padding: 10px 20px;
+  border: 2px solid #b366ff;
+  background: white;
+  color: #b366ff;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+.filter-btn:hover {
+  background: #b366ff;
+  color: white;
+}
+
+.filter-btn.active {
+  background: #b366ff;
+  color: white;
+}
+
+.filter-dropdown {
+  margin-left: 10px;
+}
+
+.book-filter {
+  padding: 8px 15px;
+  border: 2px solid #b366ff;
+  border-radius: 20px;
+  background: white;
+  color: #333;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.book-filter:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(179, 102, 255, 0.3);
+}
+
+.reviews-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 30px;
+  justify-items: center;
+  margin-bottom: 30px;
+}
+
+.review-card {
+  background: white;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+  max-width: 400px;
+  width: 100%;
+  border-left: 4px solid #b366ff;
+}
+
+.review-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.review-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 15px;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.stars {
+  color: #b366ff;
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+}
+
+.rating-number {
+  font-size: 0.9rem;
+  color: #666;
+  font-weight: 500;
+}
+
+.review-source {
+  text-align: right;
+  font-size: 0.85rem;
+}
+
+.book-title {
+  display: block;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 2px;
+}
+
+.source {
+  color: #666;
+  font-style: italic;
+}
+
+.review-text {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #444;
+  margin-bottom: 15px;
+  font-style: italic;
+}
+
+.reviewer {
+  text-align: right;
+}
+
+.reviewer-name {
+  font-size: 0.9rem;
+  color: #666;
+  font-weight: 500;
+}
+
+/* Show More Button */
+.show-more-container {
+  text-align: center;
+  margin: 30px 0;
+}
+
+.show-more-btn {
+  padding: 12px 30px;
+  background: #b366ff;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.show-more-btn:hover {
+  background: #9a4eeb;
+  transform: translateY(-1px);
+}
+
+/* Reviews Summary */
+.reviews-summary {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.reviews-summary p {
+  color: #666;
+  font-size: 0.9rem;
+  font-style: italic;
 }
 
 /* Responsive design */
