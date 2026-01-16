@@ -192,6 +192,16 @@ if (typeof window !== 'undefined') {
           />
           <span v-if="isMobile" class="tap-hint">Tap cover for details</span>
         </li>
+        <li class="book-item">
+          <img
+            src="/Kent.jpg"
+            alt="Kent Book Cover"
+            class="book-thumbnail"
+            @mouseenter="!isMobile && showModal('kent', $event)"
+            @click="isMobile && toggleMobileModal('kent', $event)"
+          />
+          <span v-if="isMobile" class="tap-hint">Tap cover for details</span>
+        </li>
       </ul>
     </section>
 

@@ -106,26 +106,6 @@ if (typeof window !== 'undefined') {
       <ul class="book-list">
         <li class="book-item">
           <img
-            src="/Kent.jpg"
-            alt="Kent Book Cover"
-            class="book-thumbnail"
-            @mouseenter="!isMobile && showModal('kent', $event)"
-            @click="isMobile && toggleMobileModal('kent', $event)"
-          />
-          <span class="book-info"
-            >Master Kent - 
-            <a
-              href="https://www.amazon.com/gp/product/B0G75HV2KV?ref_=dbs_m_mng_rwt_calw_tkin_1&storeType=ebooks&qid=1765889944&sr=8-2"
-              target="_blank"
-              alt="Clink link to preorder book"
-              >Preorder</a
-            >
-            - releasing Jan. 15th, 2026</span
-          >
-          <span v-if="isMobile" class="tap-hint">Tap cover for details</span>
-        </li>
-        <li class="book-item">
-          <img
             src="/Storm.jpg"
             alt="Storm Book Cover"
             class="book-thumbnail"
