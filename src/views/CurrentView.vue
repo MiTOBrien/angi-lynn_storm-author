@@ -117,6 +117,14 @@ if (typeof window !== 'undefined') {
         >
         Reverse harem, paranormal romance, shape-shifters, vampires, magic school, found family<br />
       </p>
+      <p>
+        <a
+          href="https://www.amazon.com/dp/B0DPVJMQ4T?ref_=saga_ast_ss_dsk_sdp"
+          target="_blank"
+          alt="Find on Amazon"
+          >Amazon Link</a
+        >
+      </p>
       <ul class="book-list">
         <li class="book-item">
           <img
@@ -180,6 +188,14 @@ if (typeof window !== 'undefined') {
         play, Domainance/submission) hurt/comfort<br />
         <strong>Trigger warnings:</strong> off-page loss of family, loss of beloved pet, family
         relationships (sibling),
+      </p>
+      <p>
+        <a
+          href="https://www.amazon.com/dp/B0G492YL9B?binding=kindle_edition&ref_=ast_author_bsi"
+          target="_blank"
+          alt="Find on Amazon"
+          >Amazon Link</a
+        >
       </p>
       <ul class="book-list">
         <li class="book-item">
