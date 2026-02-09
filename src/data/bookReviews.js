@@ -81,7 +81,20 @@ export const bookReviews = [
     ],
     reviewer: 'Koneko327',
     source: 'Amazon',
-    bookId: 'astrid1',
+    bookId: 'cm1',
+  },
+    {
+    id: 8,
+    rating: 5,
+    text: [
+      'This story is a beautifully written continuation of Astrid that allows Master Kent and his submissive that were introduced in book 1 to tell their stories and give us a look at their lives. Once more the author is able to weave a story that is emotionally compelling, quickly drawing you in, and making you want to read more, anxious to know what is coming next.',
+      'If you\'re someone who actively participates in BDSM you will appreciate the way the BDSM scenes are presented and things are handled in the scenes. If you are new to BDSM they are written expertly in a way that it is easy to understand what is going on and you\'ll finish the book with a clear understanding of what consensual BDSM is, how it is different from non-consensual activities under the guise of "BDSM", and the importance of the differences.',
+      'The character growth is something we can all understand and something that most people strive for in their lives and you will feel yourself easily relating to the struggles that the characters experience. I felt myself fully invested, getting mad with the character, crying at what they endured, and laughing or smiling at the humor.',
+      'This is a book you will remember and find yourself wanting to go back and read again.',
+    ],
+    reviewer: 'Koneko327',
+    source: 'Amazon',
+    bookId: 'cm2',
   },
 ]
 

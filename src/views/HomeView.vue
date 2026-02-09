@@ -18,8 +18,8 @@ const bookTitleMap = {
   wwa1: "Wolzen-Whitaker Academy - Book 1 : Madison's New Beginning",
   wwa2: "Wolzen-Whitaker Academy - Book 2 : The Trials",
   wwa3: "Wolzen-Whitaker Academy - Book 3 : The Beginning of the End",
-  astrid1: "Astrid: Captured Memories Book 1",
-  kent1: "Master Kent: Captured Memories Book 2"
+  cm1: "Astrid: Captured Memories Book 1",
+  cm2: "Master Kent: Captured Memories Book 2"
 }
 
 // Review filtering state
