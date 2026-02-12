@@ -112,7 +112,7 @@ if (typeof window !== 'undefined') {
             @mouseenter="!isMobile && showModal('storm', $event)"
             @click="isMobile && toggleMobileModal('storm', $event)"
           />
-          <span class="book-info">Master Storm - releasing Feb. 15th, 2026</span>
+          <span class="book-info">Master Storm - releasing Feb. 15th, 2026<a href="https://www.amazon.com/gp/product/B0GKW19ZXG?ref_=dbs_m_mng_rwt_calw_tkin_2&storeType=ebooks" target="_blank" rel="noopener noreferrer"> Preoder here</a></span>
           <span v-if="isMobile" class="tap-hint">Tap cover for details</span>
         </li>
         <li class="book-item">
