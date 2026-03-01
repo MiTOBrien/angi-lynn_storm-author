@@ -150,4 +150,16 @@ export const bookData = {
       `Micha carries the weight of expectations and the burden of perfection. As he struggles to meet everyone else's needs while ignoring his own, he must learn that true strength comes from accepting help and that even the most caring souls need care in return.`,
     ],
   },
+  jess: {
+    title: 'Jess',
+    blurb: [
+      `Jess - Coming Soon`,
+    ],
+  },
+  lucas: {
+    title: 'Lucas',
+    blurb: [
+      `Lucas - Coming Soon`,
+    ],
+  },
 }
