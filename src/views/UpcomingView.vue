@@ -101,7 +101,7 @@ if (typeof window !== 'undefined') {
         <strong>Tropes:</strong> reverse harem, BDSM ( Pet-play, impact play - floggers, whips, fire
         play, Domainance/submission) hurt/comfort<br />
         <strong>Trigger warnings:</strong> off-page loss of family, loss of beloved pet, family
-        relationships (sibling),
+        relationships (sibling)
       </p>
       <ul class="book-list">
         <li class="book-item">
@@ -181,6 +181,47 @@ if (typeof window !== 'undefined') {
             @click="isMobile && toggleMobileModal('micha', $event)"
           />
           <span class="book-info">Micha - releasing 3rd quarter 2026</span>
+          <span v-if="isMobile" class="tap-hint">Tap cover for details</span>
+        </li>
+      </ul>
+    </section>
+
+        <section class="series-section">
+      <h3>Standalone</h3>
+      <h4>Related to the Omega series</h4>
+      <p>
+        While the characters in these books live in the broader Omegaverse with Jordan and his friends from the Omega series these are written as standalone books that do not tie directly into the main series.<br /><br />
+        <strong>Tropes:</strong> hurt/comfort, mpreg, loss
+        of loved one, emotional abuse <br /><strong>Trigger warnings:</strong> Flashback to loss of
+        loved one, bullying, emotional abuse
+      </p>
+      <ul class="book-list">
+        <li class="book-item">
+          <img
+            src="/Jess.jpg"
+            alt="Jess Book Cover"
+            class="book-thumbnail"
+            @mouseenter="!isMobile && showModal('jess', $event)"
+            @click="isMobile && toggleMobileModal('jess', $event)"
+          />
+          <span class="book-info"
+            >Jess - Work in progress - releasing 4th quarter 2026
+            </span
+          >
+          <span v-if="isMobile" class="tap-hint">Tap cover for details</span>
+        </li>
+        <li class="book-item">
+          <img
+            src="/Lucas.jpg"
+            alt="Lucas Book Cover"
+            class="book-thumbnail"
+            @mouseenter="!isMobile && showModal('lucas', $event)"
+            @click="isMobile && toggleMobileModal('lucas', $event)"
+          />
+          <span class="book-info"
+            >Lucas - Work in progress - releasing 4th quarter 2026
+            </span
+          >
           <span v-if="isMobile" class="tap-hint">Tap cover for details</span>
         </li>
       </ul>
