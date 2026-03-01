@@ -186,14 +186,16 @@ if (typeof window !== 'undefined') {
       </ul>
     </section>
 
-        <section class="series-section">
+    <section class="series-section">
       <h3>Standalone</h3>
       <h4>Related to the Omega series</h4>
       <p>
-        While the characters in these books live in the broader Omegaverse with Jordan and his friends from the Omega series these are written as standalone books that do not tie directly into the main series.<br /><br />
-        <strong>Tropes:</strong> hurt/comfort, mpreg, loss
-        of loved one, emotional abuse <br /><strong>Trigger warnings:</strong> Flashback to loss of
-        loved one, bullying, emotional abuse
+        While the characters in these books live in the broader Omegaverse with Jordan and his
+        friends from the Omega series these are written as standalone books that do not tie directly
+        into the main series.<br /><br />
+        <strong>Tropes:</strong> hurt/comfort, abandonment/estrangement, alpha/beta emotional abuse
+        <br /><strong>Trigger warnings:</strong> Family discord, abandonment/estrangement,
+        kidnapping, bullying, emotional abuse
       </p>
       <ul class="book-list">
         <li class="book-item">
@@ -204,10 +206,7 @@ if (typeof window !== 'undefined') {
             @mouseenter="!isMobile && showModal('jess', $event)"
             @click="isMobile && toggleMobileModal('jess', $event)"
           />
-          <span class="book-info"
-            >Jess - Work in progress - releasing 4th quarter 2026
-            </span
-          >
+          <span class="book-info">Jess - Work in progress - releasing 4th quarter 2026 </span>
           <span v-if="isMobile" class="tap-hint">Tap cover for details</span>
         </li>
         <li class="book-item">
@@ -218,10 +217,7 @@ if (typeof window !== 'undefined') {
             @mouseenter="!isMobile && showModal('lucas', $event)"
             @click="isMobile && toggleMobileModal('lucas', $event)"
           />
-          <span class="book-info"
-            >Lucas - Work in progress - releasing 4th quarter 2026
-            </span
-          >
+          <span class="book-info">Lucas - Work in progress - releasing 4th quarter 2026 </span>
           <span v-if="isMobile" class="tap-hint">Tap cover for details</span>
         </li>
       </ul>
