@@ -193,7 +193,7 @@ if (typeof window !== 'undefined') {
         While the characters in these books live in the broader Omegaverse with Jordan and his
         friends from the Omega series these are written as standalone books that do not tie directly
         into the main series.<br /><br />
-        <strong>Tropes:</strong> hurt/comfort, abandonment/estrangement, alpha/beta emotional abuse
+        <strong>Tropes:</strong> hurt/comfort, abandonment/estrangement, alpha/beta, emotional abuse
         <br /><strong>Trigger warnings:</strong> Family discord, abandonment/estrangement,
         kidnapping, bullying, emotional abuse
       </p>
