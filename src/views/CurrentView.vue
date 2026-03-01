@@ -191,7 +191,7 @@ if (typeof window !== 'undefined') {
       </p>
       <p>
         <a
-          href="https://www.amazon.com/dp/B0G492YL9B?binding=kindle_edition&ref_=ast_author_bsi"
+          href="https://www.amazon.com/dp/B0GQJFH96G?binding=kindle_edition&ref_=ast_author_bsi"
           target="_blank"
           alt="Find on Amazon"
           >Amazon Link</a
@@ -215,6 +215,16 @@ if (typeof window !== 'undefined') {
             class="book-thumbnail"
             @mouseenter="!isMobile && showModal('kent', $event)"
             @click="isMobile && toggleMobileModal('kent', $event)"
+          />
+          <span v-if="isMobile" class="tap-hint">Tap cover for details</span>
+        </li>
+        <li class="book-item">
+          <img
+            src="/Storm.jpg"
+            alt="Storm Book Cover"
+            class="book-thumbnail"
+            @mouseenter="!isMobile && showModal('storm', $event)"
+            @click="isMobile && toggleMobileModal('storm', $event)"
           />
           <span v-if="isMobile" class="tap-hint">Tap cover for details</span>
         </li>

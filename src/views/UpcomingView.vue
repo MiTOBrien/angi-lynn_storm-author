@@ -106,24 +106,20 @@ if (typeof window !== 'undefined') {
       <ul class="book-list">
         <li class="book-item">
           <img
-            src="/Storm.jpg"
-            alt="Storm Book Cover"
-            class="book-thumbnail"
-            @mouseenter="!isMobile && showModal('storm', $event)"
-            @click="isMobile && toggleMobileModal('storm', $event)"
-          />
-          <span class="book-info">Master Storm - releasing Feb. 15th, 2026<a href="https://www.amazon.com/gp/product/B0GKW19ZXG?ref_=dbs_m_mng_rwt_calw_tkin_2&storeType=ebooks" target="_blank" rel="noopener noreferrer"> Preoder here</a></span>
-          <span v-if="isMobile" class="tap-hint">Tap cover for details</span>
-        </li>
-        <li class="book-item">
-          <img
             src="/Mayson.jpg"
             alt="Mayson Book Cover"
             class="book-thumbnail"
             @mouseenter="!isMobile && showModal('mayson', $event)"
             @click="isMobile && toggleMobileModal('mayson', $event)"
           />
-          <span class="book-info">Mayson - releasing Mar. 15th, 2026</span>
+          <span class="book-info"
+            ><a
+              href="https://www.amazon.com/gp/product/B0GQNLMFYL?ref_=dbs_m_mng_rwt_calw_tkin_3&storeType=ebooks"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Pre-order Mayson</a
+            ></span
+          >
           <span v-if="isMobile" class="tap-hint">Tap cover for details</span>
         </li>
       </ul>
