@@ -81,51 +81,6 @@ if (typeof window !== 'undefined') {
     <h2>Upcoming Releases</h2>
 
     <section class="series-section">
-      <h3>Captured Memories Series</h3>
-      <h4>Series Information:</h4>
-      <p>
-        When friends who are closer than family gather for Thanksgiving, their conversation
-        naturally circles back to the first meal many of them ever shared—setting off a wave of
-        memories and laughter. As they reminisce, they begin revisiting the moments that shaped
-        their individual journeys and ultimately drew them together. One thought lingers among them:
-        every picture represents a moment in time, but the real meaning lives in the story behind
-        it. A single snapshot never captures the choices, the struggles, or the quiet victories that
-        led to that moment. Follow Astrid and her found family as they reflect on the “pictures” of
-        their lives—both the ones hanging on their walls and the ones they carry only in memory—and
-        share the experiences that brought them from where they started to where they stand now. At
-        its heart, this series explores how people from different backgrounds—and sometimes very
-        different worlds—can find themselves woven into the same chosen family. This why-choose,
-        low-spice, slice-of-life series unfolds through personal reflections, heartfelt
-        conversations, and shared memories, offering an intimate look at each character's growth and
-        the bonds that hold them together.<br /><br />
-        <strong>Tropes:</strong> reverse harem, BDSM ( Pet-play, impact play - floggers, whips, fire
-        play, Domainance/submission) hurt/comfort<br />
-        <strong>Trigger warnings:</strong> off-page loss of family, loss of beloved pet, family
-        relationships (sibling)
-      </p>
-      <ul class="book-list">
-        <li class="book-item">
-          <img
-            src="/Mayson.jpg"
-            alt="Mayson Book Cover"
-            class="book-thumbnail"
-            @mouseenter="!isMobile && showModal('mayson', $event)"
-            @click="isMobile && toggleMobileModal('mayson', $event)"
-          />
-          <span class="book-info"
-            ><a
-              href="https://www.amazon.com/gp/product/B0GQNLMFYL?ref_=dbs_m_mng_rwt_calw_tkin_3&storeType=ebooks"
-              target="_blank"
-              rel="noopener noreferrer"
-              >Pre-order Mayson</a
-            ></span
-          >
-          <span v-if="isMobile" class="tap-hint">Tap cover for details</span>
-        </li>
-      </ul>
-    </section>
-
-    <section class="series-section">
       <h3>Omega Series</h3>
       <h4>Series Information:</h4>
       <p>
