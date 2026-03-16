@@ -11,15 +11,25 @@ import {
 const currentSlide = ref(0)
 let intervalId = null
 
-const bookCovers = ['AstridCover.jpg', 'Kent.jpg', 'Wolzen1.jpg', 'Wolzen2.jpg', 'Wolzen3.jpg']
+const bookCovers = [
+  'AstridCover.jpg',
+  'Kent.jpg',
+  'Storm.jpg',
+  'Mayson.jpg',
+  'Wolzen1.jpg',
+  'Wolzen2.jpg',
+  'Wolzen3.jpg',
+]
 
 // Map bookId → full title
 const bookTitleMap = {
   wwa1: "Wolzen-Whitaker Academy - Book 1 : Madison's New Beginning",
-  wwa2: "Wolzen-Whitaker Academy - Book 2 : The Trials",
-  wwa3: "Wolzen-Whitaker Academy - Book 3 : The Beginning of the End",
-  cm1: "Astrid: Captured Memories Book 1",
-  cm2: "Master Kent: Captured Memories Book 2"
+  wwa2: 'Wolzen-Whitaker Academy - Book 2 : The Trials',
+  wwa3: 'Wolzen-Whitaker Academy - Book 3 : The Beginning of the End',
+  cm1: 'Astrid: Captured Memories Book 1',
+  cm2: 'Master Kent: Captured Memories Book 2',
+  cm3: 'Master Storm: Captured Memories Book 3',
+  cm4: 'Mayson: Captured Memories Book 4',
 }
 
 // Review filtering state
@@ -162,11 +172,7 @@ onUnmounted(() => {
             <option value="all">All Reviews</option>
 
             <optgroup label="By Book">
-              <option
-                v-for="id in bookIds"
-                :key="id"
-                :value="id"
-              >
+              <option v-for="id in bookIds" :key="id" :value="id">
                 {{ bookTitleMap[id] }}
               </option>
             </optgroup>
@@ -193,11 +199,7 @@ onUnmounted(() => {
             </div>
           </div>
 
-          <p
-            v-for="(para, i) in review.text"
-            :key="i"
-            class="review-text"
-          >
+          <p v-for="(para, i) in review.text" :key="i" class="review-text">
             {{ para }}
           </p>
 
@@ -546,7 +548,7 @@ h2 {
     padding: 20px;
     max-width: 100%;
   }
- 
+
   .review-card {
     box-sizing: border-box;
   }
