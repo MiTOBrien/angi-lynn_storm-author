@@ -241,6 +241,56 @@ if (typeof window !== 'undefined') {
       </ul>
     </section>
 
+    <section class="series-section">
+      <h3>An Omega's Journey Series</h3>
+      <h4>Series Information:</h4>
+      <p>
+        In a world built for Alphas, there is a group of Omega's and one safe place that is seeking
+        to challenge the status quo. Each of our Omegas has a path to follow, a journey they must go
+        on to find the golden ring at the end of the climb. Each one has one thing that is their
+        rock bottom that in the end becomes their salvation. Together with packs of Alphas who
+        believe that Omegas are the strongest of their society, they travel their path, fight the
+        fight, and come out on top.
+      </p>
+      <p>
+        <strong>Tropes:</strong> hurt/comfort, mpreg, loss of loved one, emotional abuse
+        <br /><strong>Trigger warnings:</strong> Flashback to loss of loved one, bullying, emotional
+        abuse
+      </p>
+      <p>
+        <a
+          href="https://www.amazon.com/dp/B0GQJFH96G?binding=kindle_edition&ref_=ast_author_bsi"
+          target="_blank"
+          alt="Find on Amazon"
+          >Amazon Link</a
+        >
+      </p>
+      <ul class="book-list">
+        <li class="book-item">
+          <img
+            src="/Jordan.jpg"
+            alt="Jordan Book Cover"
+            class="book-thumbnail"
+            @mouseenter="!isMobile && showModal('jordan', $event)"
+            @click="isMobile && toggleMobileModal('jordan', $event)"
+          />
+          <span class="book-info">Jordan: An Omega's Journey</span>
+          <span v-if="isMobile" class="tap-hint">Tap cover for details</span>
+        </li>
+        <li class="book-item">
+          <img
+            src="/Phoenix.jpg"
+            alt="Phoenix Book Cover"
+            class="book-thumbnail"
+            @mouseenter="!isMobile && showModal('phoenix', $event)"
+            @click="isMobile && toggleMobileModal('phoenix', $event)"
+          />
+          <span class="book-info">Phoenix: An Omega's Rise From The Ashes</span>
+          <span v-if="isMobile" class="tap-hint">Tap cover for details</span>
+        </li>
+      </ul>
+    </section>
+
     <!-- Modal -->
     <Transition name="modal">
       <div v-if="hoveredBook" class="book-modal">

@@ -96,28 +96,6 @@ if (typeof window !== 'undefined') {
       <ul class="book-list">
         <li class="book-item">
           <img
-            src="/Jordan.jpg"
-            alt="Jordan Book Cover"
-            class="book-thumbnail"
-            @mouseenter="!isMobile && showModal('jordan', $event)"
-            @click="isMobile && toggleMobileModal('jordan', $event)"
-          />
-          <span class="book-info">Jordan - releasing 2nd quarter 2026</span>
-          <span v-if="isMobile" class="tap-hint">Tap cover for details</span>
-        </li>
-        <li class="book-item">
-          <img
-            src="/Phoenix.jpg"
-            alt="Phoenix Book Cover"
-            class="book-thumbnail"
-            @mouseenter="!isMobile && showModal('phoenix', $event)"
-            @click="isMobile && toggleMobileModal('phoenix', $event)"
-          />
-          <span class="book-info">Phoenix - releasing 2nd quarter 2026</span>
-          <span v-if="isMobile" class="tap-hint">Tap cover for details</span>
-        </li>
-        <li class="book-item">
-          <img
             src="/Cole.jpg"
             alt="Cole Book Cover"
             class="book-thumbnail"
