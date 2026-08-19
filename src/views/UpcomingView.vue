@@ -81,45 +81,6 @@ if (typeof window !== 'undefined') {
     <h2>Upcoming Releases</h2>
 
     <section class="series-section">
-      <h3>Omega Series</h3>
-      <h4>Series Information:</h4>
-      <p>
-        In a world built for Alphas, there is a group of Omega's and one safe place that is seeking
-        to challenge the status quo. Each of our Omegas has a path to follow, a journey they must go
-        on to find the golden ring at the end of the climb. Each one has one thing that is their
-        rock bottom that in the end becomes their salvation. Together with packs of Alphas who
-        believe that Omegas are the strongest of their society, they travel their path, fight the
-        fight, and come out on top. <br /><br /><strong>Tropes:</strong> hurt/comfort, mpreg, loss
-        of loved one, emotional abuse <br /><strong>Trigger warnings:</strong> Flashback to loss of
-        loved one, bullying, emotional abuse
-      </p>
-      <ul class="book-list">
-        <li class="book-item">
-          <img
-            src="/Cole.jpg"
-            alt="Cole Book Cover"
-            class="book-thumbnail"
-            @mouseenter="!isMobile && showModal('cole', $event)"
-            @click="isMobile && toggleMobileModal('cole', $event)"
-          />
-          <span class="book-info">Cole - releasing 2nd quarter 2026</span>
-          <span v-if="isMobile" class="tap-hint">Tap cover for details</span>
-        </li>
-        <li class="book-item">
-          <img
-            src="/Micha.jpg"
-            alt="Micha Book Cover"
-            class="book-thumbnail"
-            @mouseenter="!isMobile && showModal('micha', $event)"
-            @click="isMobile && toggleMobileModal('micha', $event)"
-          />
-          <span class="book-info">Micha - releasing 3rd quarter 2026</span>
-          <span v-if="isMobile" class="tap-hint">Tap cover for details</span>
-        </li>
-      </ul>
-    </section>
-
-    <section class="series-section">
       <h3>Standalone</h3>
       <h4>Related to the Omega series</h4>
       <p>
@@ -139,7 +100,7 @@ if (typeof window !== 'undefined') {
             @mouseenter="!isMobile && showModal('jess', $event)"
             @click="isMobile && toggleMobileModal('jess', $event)"
           />
-          <span class="book-info">Jess - Work in progress - releasing 4th quarter 2026 </span>
+          <span class="book-info">Jess - Work in progress - releasing 2026-2027 </span>
           <span v-if="isMobile" class="tap-hint">Tap cover for details</span>
         </li>
         <li class="book-item">
@@ -150,7 +111,7 @@ if (typeof window !== 'undefined') {
             @mouseenter="!isMobile && showModal('lucas', $event)"
             @click="isMobile && toggleMobileModal('lucas', $event)"
           />
-          <span class="book-info">Lucas - Work in progress - releasing 4th quarter 2026 </span>
+          <span class="book-info">Lucas - Work in progress - releasing 2026-2027 </span>
           <span v-if="isMobile" class="tap-hint">Tap cover for details</span>
         </li>
       </ul>

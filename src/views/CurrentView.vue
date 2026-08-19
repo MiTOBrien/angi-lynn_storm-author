@@ -259,7 +259,7 @@ if (typeof window !== 'undefined') {
       </p>
       <p>
         <a
-          href="https://www.amazon.com/dp/B0GQJFH96G?binding=kindle_edition&ref_=ast_author_bsi"
+          href="https://www.amazon.com/dp/B0DRZD65WM?binding=kindle_edition&ref_=ast_author_bsi"
           target="_blank"
           alt="Find on Amazon"
           >Amazon Link</a
@@ -286,6 +286,28 @@ if (typeof window !== 'undefined') {
             @click="isMobile && toggleMobileModal('phoenix', $event)"
           />
           <span class="book-info">Phoenix: An Omega's Rise From The Ashes</span>
+          <span v-if="isMobile" class="tap-hint">Tap cover for details</span>
+        </li>
+        <li class="book-item">
+          <img
+            src="/Cole.jpg"
+            alt="Cole Book Cover"
+            class="book-thumbnail"
+            @mouseenter="!isMobile && showModal('cole', $event)"
+            @click="isMobile && toggleMobileModal('cole', $event)"
+          />
+          <span class="book-info">Cole: An Omega's Purpose</span>
+          <span v-if="isMobile" class="tap-hint">Tap cover for details</span>
+        </li>
+        <li class="book-item">
+          <img
+            src="/Micha.jpg"
+            alt="Micha Book Cover"
+            class="book-thumbnail"
+            @mouseenter="!isMobile && showModal('micha', $event)"
+            @click="isMobile && toggleMobileModal('micha', $event)"
+          />
+          <span class="book-info">Micha: An Omega's Solo</span>
           <span v-if="isMobile" class="tap-hint">Tap cover for details</span>
         </li>
       </ul>

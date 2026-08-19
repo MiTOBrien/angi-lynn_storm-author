@@ -12,8 +12,10 @@ const currentSlide = ref(0)
 let intervalId = null
 
 const bookCovers = [
-  'Phoenix.jpg',
   'Jordan.jpg',
+  'Phoenix.jpg',
+  'Cole.jpg',
+  'Micha.jpg',
   'AstridCover.jpg',
   'Kent.jpg',
   'Storm.jpg',
@@ -34,6 +36,8 @@ const bookTitleMap = {
   cm4: 'Mayson: Captured Memories Book 4',
   oj1: 'Jodran: An Omegas Journey',
   oj2: 'Phoenix: An Omegas Rise From The Ashes',
+  oj3: 'Cole: An Omegas Purpose',
+  oj4: 'Micha: An Omegas Solo',
 }
 
 // Review filtering state
