@@ -274,7 +274,6 @@ if (typeof window !== 'undefined') {
             @mouseenter="!isMobile && showModal('jordan', $event)"
             @click="isMobile && toggleMobileModal('jordan', $event)"
           />
-          <span class="book-info">Jordan: An Omega's Journey</span>
           <span v-if="isMobile" class="tap-hint">Tap cover for details</span>
         </li>
         <li class="book-item">
@@ -285,7 +284,6 @@ if (typeof window !== 'undefined') {
             @mouseenter="!isMobile && showModal('phoenix', $event)"
             @click="isMobile && toggleMobileModal('phoenix', $event)"
           />
-          <span class="book-info">Phoenix: An Omega's Rise From The Ashes</span>
           <span v-if="isMobile" class="tap-hint">Tap cover for details</span>
         </li>
         <li class="book-item">
@@ -296,7 +294,6 @@ if (typeof window !== 'undefined') {
             @mouseenter="!isMobile && showModal('cole', $event)"
             @click="isMobile && toggleMobileModal('cole', $event)"
           />
-          <span class="book-info">Cole: An Omega's Purpose</span>
           <span v-if="isMobile" class="tap-hint">Tap cover for details</span>
         </li>
         <li class="book-item">
@@ -307,7 +304,6 @@ if (typeof window !== 'undefined') {
             @mouseenter="!isMobile && showModal('micha', $event)"
             @click="isMobile && toggleMobileModal('micha', $event)"
           />
-          <span class="book-info">Micha: An Omega's Solo</span>
           <span v-if="isMobile" class="tap-hint">Tap cover for details</span>
         </li>
       </ul>
