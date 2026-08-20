@@ -82,6 +82,63 @@ if (typeof window !== 'undefined') {
 
     <section class="series-section">
       <h3>Standalone</h3>
+      <h4>Related to the Captured Memories series</h4>
+      <p>
+        While the characters in these books live in the broader Captured Memories world with Astrid and her
+        friends from the Captured Memories series these characters share their captured meories in different ways.<br /><br />
+        <strong>Tropes:</strong> hurt/comfort, abandonment/estrangement, alpha/beta, emotional abuse
+        <br /><strong>Trigger warnings:</strong> Family discord, abandonment/estrangement, BDSM/Power exchange
+      </p>
+      <ul class="book-list">
+        <li class="book-item">
+          <img
+            src="/comingsoon.jpeg"
+            alt="Gavin Book Cover"
+            class="book-thumbnail"
+            @mouseenter="!isMobile && showModal('gavin', $event)"
+            @click="isMobile && toggleMobileModal('gavin', $event)"
+          />
+          <span class="book-info">Gavin: Captured Memories Duet - Work in progress - releasing 2026-2027 </span>
+          <span v-if="isMobile" class="tap-hint">Tap cover for details</span>
+        </li>
+        <li class="book-item">
+          <img
+            src="/comingsoon.jpeg"
+            alt="Caelan Book Cover"
+            class="book-thumbnail"
+            @mouseenter="!isMobile && showModal('caelan', $event)"
+            @click="isMobile && toggleMobileModal('caelan', $event)"
+          />
+          <span class="book-info">Caelan: Captured Memories Duet - Work in progress - releasing 2026-2027 </span>
+          <span v-if="isMobile" class="tap-hint">Tap cover for details</span>
+        </li>
+        <li class="book-item">
+          <img
+            src="/comingsoon.jpeg"
+            alt="Wren Book Cover"
+            class="book-thumbnail"
+            @mouseenter="!isMobile && showModal('wren', $event)"
+            @click="isMobile && toggleMobileModal('wren', $event)"
+          />
+          <span class="book-info">Wren - Work in progress - releasing 2026-2027 </span>
+          <span v-if="isMobile" class="tap-hint">Tap cover for details</span>
+        </li>
+        <li class="book-item">
+          <img
+            src="/comingsoon.jpeg"
+            alt="Xander Book Cover"
+            class="book-thumbnail"
+            @mouseenter="!isMobile && showModal('xander', $event)"
+            @click="isMobile && toggleMobileModal('xander', $event)"
+          />
+          <span class="book-info">Xander - Work in progress - releasing 2026-2027 </span>
+          <span v-if="isMobile" class="tap-hint">Tap cover for details</span>
+        </li>
+      </ul>
+    </section>
+
+    <section class="series-section">
+      <h3>Standalone</h3>
       <h4>Related to the Omega series</h4>
       <p>
         While the characters in these books live in the broader Omegaverse with Jordan and his
