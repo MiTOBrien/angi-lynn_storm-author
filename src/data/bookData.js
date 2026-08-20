@@ -162,4 +162,28 @@ export const bookData = {
       `Lucas - Coming Soon`,
     ],
   },
+  gavin: {
+    title: 'Gavin',
+    blurb: [
+      `Gavin: Captured Memories Duet - Coming Soon`,
+    ],
+  },
+  caelan: {
+    title: 'Caelan',
+    blurb: [
+      `Caelan: Captured Memories Duet - Coming Soon`,
+    ],
+  },
+  wren: {
+    title: 'Wren',
+    blurb: [
+      `Wren - Coming Soon`,
+    ],
+  },
+  xander: {
+    title: 'Xander',
+    blurb: [
+      `Xander - Coming Soon`,
+    ],
+  },
 }
