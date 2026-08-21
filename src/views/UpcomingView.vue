@@ -92,7 +92,7 @@ if (typeof window !== 'undefined') {
       <ul class="book-list">
         <li class="book-item">
           <img
-            src="/comingsoon.jpeg"
+            src="/GavinCover.jpg"
             alt="Gavin Book Cover"
             class="book-thumbnail"
             @mouseenter="!isMobile && showModal('gavin', $event)"
@@ -151,7 +151,7 @@ if (typeof window !== 'undefined') {
       <ul class="book-list">
         <li class="book-item">
           <img
-            src="/Jess.jpg"
+            src="/JessCover.jpg"
             alt="Jess Book Cover"
             class="book-thumbnail"
             @mouseenter="!isMobile && showModal('jess', $event)"
@@ -162,7 +162,7 @@ if (typeof window !== 'undefined') {
         </li>
         <li class="book-item">
           <img
-            src="/Lucas.jpg"
+            src="/LucasCover.jpg"
             alt="Lucas Book Cover"
             class="book-thumbnail"
             @mouseenter="!isMobile && showModal('lucas', $event)"

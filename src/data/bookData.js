@@ -153,37 +153,61 @@ export const bookData = {
   jess: {
     title: 'Jess',
     blurb: [
-      `Jess - Coming Soon`,
+      `I know how to take care of myself. I've had plenty of practice.`,
+
+      `Being kidnapped and then rescued wasn't part of the plan.`,
+
+      `Neither was ending up at Omega House with five former military alphas who seem to have collectively decided I'm theirs to protect`,
+
+      `They're a pack. A family. Somehow, they're making room for me. I should probably be terrified.`,
+
+      `Instead, for the first time in my life, I'm beginning to understand what it feels like to have people who stay. I have five stubborn alphas who stand beside me.`,
+
+      `They survived their last mission together.`,
+
+      `Maybe I can survive learning that being loved doesn't mean I have to earn the right to stay.`,
     ],
   },
   lucas: {
     title: 'Lucas',
     blurb: [
-      `Lucas - Coming Soon`,
+      `Lucas always knew he was a little different than the other kids.`,
+
+      `When his designation present and he had two secondary genders instead of one, his family made a choice.`,
+
+      `When he moves to Olympic City for college, Lucas makes another choice. One that changes the course of things.`,
     ],
   },
   gavin: {
     title: 'Gavin',
     blurb: [
-      `Gavin: Captured Memories Duet - Coming Soon`,
+      `Gavin Monroe thought he understood responsibility.`,
+
+      `Build a career. Pay the bills. Keep your promises. Take care of the people who depend on you.`,
+
+      `Then his estranged brother walks back into his life and quietly dismantles everything Gavin thought he knew about family, belonging, and himself.`,
+
+      `Jared has built a life Gavin knows almost nothing about. A partner he loves. A sprawling chosen family. A community with its own traditions, expectations, and language. And instead of watching from the edges, Gavin decides he wants to understand.`,
+
+      `That decision changes everything.`,
+
+      `Reconnecting with Jared leads Gavin from the life he built in Connecticut to a new home beneath the Colorado mountains and into a community unlike anything he has known before. There are rules he doesn't understand, relationships he has no vocabulary for, and people who challenge nearly every assumption he carried with him.`,
+
+      `Along the way, two enormous rescue dogs take over his house, and strangers become family. Through his journaling Gavin discovers he's far more capable of caring for others than he ever believed.`,
+
+      `The more he learns about Jared's world, the more Gavin begins to understand himself, and realizes family isn’t about rebuilding what was lost. Sometimes it's about creating something entirely new.`,
     ],
   },
   caelan: {
     title: 'Caelan',
-    blurb: [
-      `Caelan: Captured Memories Duet - Coming Soon`,
-    ],
+    blurb: [`Caelan: Captured Memories Duet - Coming Soon`],
   },
   wren: {
     title: 'Wren',
-    blurb: [
-      `Wren - Coming Soon`,
-    ],
+    blurb: [`Wren - Coming Soon`],
   },
   xander: {
     title: 'Xander',
-    blurb: [
-      `Xander - Coming Soon`,
-    ],
+    blurb: [`Xander - Coming Soon`],
   },
 }

@@ -15,23 +15,25 @@
       Fast forward a few years and an idea formed in her head for a book that she couldn't make go
       away. Deciding to just "get it out of her head" she sat down and started writing. One page
       became 10, one chapter turned into 20, and then there it was, her first book actually written:
-      Bunnies of Thornmaw - Blossom's Story. While this book has yet to be officially published, it sparked a
-      passion for writing that still continues. Here is a link to Ream Stories if you want to read
+      Bunnies of Thornmaw - Blossom's Story. While this book has yet to be officially published, it
+      sparked a passion for writing that still continues. Here is a link to Ream Stories if you want
+      to read
       <a
         href="https://reamstories.com/page/m3bk90e3vp/public"
         alt="Ream Stories page"
         target="_blank"
-        >Blossom's Story</a
+        >Blossom's Story,</a
       >
-      ,any of other  of her other works in progress or completed series. Her next idea for a book series quickly came to mind
-      and fingers were flying over the keyboard again and Madison came to life as the main character
-      in the Wolzen-Whitaker Academy series, a 3 book series that was her first series completed.
+      any of other of her other works in progress or completed series. Her next idea for a book
+      series quickly came to mind and fingers were flying over the keyboard again and Madison came
+      to life as the main character in the Wolzen-Whitaker Academy series, a 3 book series that was
+      her first series completed.
     </p>
     <p>
-      Though her writing journey is a relatively new one, her imagination and dedication to
-      storytelling have already shaped her unique voice. She credits her inspiration to the dream
-      that launched her creative process, and she finds joy in bringing the characters and worlds in
-      her mind to life on paper.
+      Though her writing journey is a relatively new one by author standards, only a few years into
+      it, her imagination and dedication to storytelling have already shaped her unique voice. She
+      credits her inspiration to the dream that launched her creative process, and she finds joy in
+      bringing the characters and worlds in her mind to life on paper.
     </p>
     <p>
       When she isn't writing, she enjoys spending time with her supportive sisterwife and their
@@ -44,7 +46,7 @@
 
 <style scoped>
 p {
-  margin: 20px 20px;
+  margin: 25px 200px;
 }
 h2 {
   text-align: center;
