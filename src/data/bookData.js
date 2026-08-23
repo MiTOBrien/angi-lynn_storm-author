@@ -155,9 +155,9 @@ export const bookData = {
     blurb: [
       `I know how to take care of myself. I've had plenty of practice.`,
 
-      `Being kidnapped and then rescued wasn't part of the plan.`,
+      `Being kidnapped and then rescued wasn't part of the plan. Neither was ending up at Omega House with five former military alphas who seem to have collectively decided I'm theirs to protect`,
 
-      `Neither was ending up at Omega House with five former military alphas who seem to have collectively decided I'm theirs to protect`,
+      `Roman is their leader, carrying the weight of every decision that went wrong. Haze watches everything and makes me feel safer without saying a word. Kevin, Justin, and Raphael each have their own way of slipping past defenses I didn't realize I'd built.`,
 
       `They're a pack. A family. Somehow, they're making room for me. I should probably be terrified.`,
 
